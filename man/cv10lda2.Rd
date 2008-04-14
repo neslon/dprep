@@ -12,8 +12,9 @@ cv10lda2(data)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{data}{the name of the dataset}
+  \item{data}{The name of the dataset}
 }
 \author{Edgar Acuna}
 \seealso{\code{\link{crossval}}}
-\keyword{classif}% at least one, from doc/KEYWORDS
+\keyword{classif}
+

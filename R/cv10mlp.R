@@ -1,4 +1,4 @@
-"cv10mlp" <-
+`cv10mlp` <-
 function(data,units,decay=0,maxwts=1000,maxit=100,repet)
 {
 #This function finds an estimate for the

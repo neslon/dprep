@@ -1,4 +1,4 @@
-"sfs1" <-
+`sfs1` <-
 function(data,indic,correcto,kvec,method=c("lda","knn","rpart"))
 {
 # This function carries out one "forward step" using 

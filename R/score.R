@@ -1,4 +1,4 @@
-"score" <-
+`score` <-
 function(data)
 {
 #Function to determine the score measure that will be used to determine

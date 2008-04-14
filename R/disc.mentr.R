@@ -1,4 +1,4 @@
-"disc.mentr" <-
+`disc.mentr` <-
 function(data,vars) 
 {
   n <- dim(data)[1]

@@ -64,7 +64,7 @@ void Points(double *matrix, int *csize, double *tMatrix)
          }
          tMatrix[j] = mid_point(matrix[j], matrix[j+1]);
    }
-   tMatrix[*csize]=0.0;
+   tMatrix[(*csize)-1]=0.0;
 
 }
 

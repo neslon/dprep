@@ -2,17 +2,17 @@
 \alias{ce.knn.imp}
 \title{Function that calls ec.knnimp to perform knn imputation}
 \description{
-This is just a skeleton function. It simply sets up the dataset
-that will have its missing values imputed by knn imputation.
-ec.knnimp is the function that carries out the actual imputation.
+This function simply sets up the dataset so that missing values 
+can be imputed by knn imputation. ec.knnimp is the function that 
+actually carries out the imputation.
 }
 \usage{
 ce.knn.imp(m, natr = rep(0, 0), k1)
 }
 \arguments{
-  \item{m}{ matrix to be tested with relevant variables and classes
+  \item{m}{ matrix containing relevant variables and classes
 }
-  \item{natr}{ list of nominal attributes}
+\item{natr}{ list of nominal attributes}
 \item{k1}{ number of neighbors to use for imputation}
 }
 \value{
@@ -23,4 +23,5 @@ ce.knn.imp(m, natr = rep(0, 0), k1)
 data(hepatitis)
 hepa.knnimp=ce.knn.imp(hepatitis,natr=c(1,3:14),k1=10)
 }
-\keyword{manip} 
+
+\keyword{ manip } 

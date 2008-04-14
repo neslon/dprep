@@ -1,4 +1,4 @@
-"moda" <-
+`moda` <-
 function(x,na.rm=TRUE)
 {
   

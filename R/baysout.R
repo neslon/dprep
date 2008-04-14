@@ -1,4 +1,4 @@
-"baysout" <-
+`baysout` <-
 function(D,blocks=5,k=3,num.out=10)
 {
 #Function that gives the outlyingness measure for the requested number of

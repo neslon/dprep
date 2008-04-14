@@ -1,4 +1,4 @@
-"vvalen" <-
+`vvalen` <-
 function (data) 
 {#***************************************
 #This function performs the Van Valen test

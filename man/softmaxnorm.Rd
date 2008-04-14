@@ -2,13 +2,13 @@
 \alias{softmaxnorm}
 \title{Softmax Normalization}
 \description{
-This is a function to apply softmax normalization to a matrix or dataframe.
+This is a function that applies softmax normalization to a matrix or dataframe.
 }
 \usage{
 softmaxnorm(data)
 }
 \arguments{
-  \item{data}{ the datset to be normalized}
+  \item{data}{ The datset to be normalized}
 }
 \details{
   This normalization is so called because it reaches "softly" towards
@@ -30,6 +30,5 @@ op=par(mfrow=c(2,1))
 plot(sonar[,1])
 plot(sonar.sftnorm[,1])
 par(op)
-
 }
 \keyword{manip}

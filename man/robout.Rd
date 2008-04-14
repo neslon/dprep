@@ -2,7 +2,7 @@
 \alias{robout}
 \title{Outlier Detection with Robust Mahalonobis distance}
 \description{
-  This function finds out the outliers of a dataset using 
+  This function finds the outliers of a dataset using 
 robust versions of the Mahalanobis distance.
 }
 \usage{
@@ -10,23 +10,22 @@ robout(data, nclass, meth = c("mve", "mcd"), rep = 10,
 plot = TRUE)
 }
 \arguments{
-  \item{data}{ the dataset for which outlier detection will be carried out.}
-  \item{nclass}{ integer value that represents the class to detect for outliers}
-  \item{meth}{ method used to compute the Mahalanobis distance, "mve"=minimum
+  \item{data}{ The dataset for which outlier detection will be carried out.}
+  \item{nclass}{ An integer value that represents the class to detect for outliers}
+  \item{meth}{ The method used to compute the Mahalanobis distance, "mve"=minimum
 volume estimator, "mcd"=minimum covariance determinant} 
-  \item{rep}{ number of repetitions}
-  \item{plot}{ boolean value to turn on or off the scatter plot of the 
+  \item{rep}{ Number of repetitions}
+  \item{plot}{ A boolean value to turn on and off the scatter plot of the 
 Mahalanobis distances}
 }
 \details{
 Requires uses cov.rob function from the MASS library.
 }
 \value{
-  \item{top1} { index of observations identified as top outliers by 
-frequency of selection}
-  \item{topout}{ index of observations identified as possible outliers 
+  \item{top1} {Index of observations identified as top outliers by  frequency of selection}
+  \item{topout}{ Index of observations identified as possible outliers 
 by outlyingness measure}
-  \item{outme}{ index of observations and their outlyingness measures}
+  \item{outme}{ Index of observations and their outlyingness measures}
 }
 \references{
 Rousseeuw, P, and Leroy, A. (1987). Robust Regression and outlier detection. John Wiley & Sons. New York.
@@ -40,4 +39,5 @@ multiple outliers. Journal of the American Statistical Association, 89:1329-1339
 data(bupa)
 robout(bupa,1,"mcd")
 }
+
 \keyword{methods}

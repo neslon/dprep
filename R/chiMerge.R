@@ -1,4 +1,4 @@
-"chiMerge" <-
+`chiMerge` <-
 function(data,varcon,alpha=0.1)
 {#********************************************************
 # This function perform discretization using the ChiMerge method

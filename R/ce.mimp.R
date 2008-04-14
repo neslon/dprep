@@ -1,4 +1,4 @@
-"ce.mimp" <-
+`ce.mimp` <-
 function (w.cl,method=c("mean","median"),atr,nomatr=0)
 {
 #find dimensions of matrix

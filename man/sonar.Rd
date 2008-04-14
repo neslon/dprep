@@ -3,7 +3,7 @@
 \docType{data}
 \title{The Sonar dataset}
 \description{
-This is the sonar dataset It containis information of 208 objects and 60 attributes.
+This is the sonar dataset. It containis information on 208 objects and 60 attributes.
 The objects are classified in two classes: "rock" and "mine".
 }
 \usage{data(sonar)}

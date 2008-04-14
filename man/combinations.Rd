@@ -10,10 +10,10 @@ Hyperdimensional Data Analysis(1999)
 combinations(numcol)
 }
 \arguments{
-  \item{numcol}{ a value representing the number of columns in a matrix}
+  \item{numcol}{  A value representing the number of columns in a matrix}
 }
 \value{
-  a matrix in which each column represents a distinct permutation of the sequence 1:numcol 
+  A matrix in which each column represents a distinct permutation of the sequence 1:numcol 
 }
 \references{Wegman, E. (1990), Hyperdimensional data analysis using parallel 
 coordinates, Journal of the American Statistical Association, 85, 664-675.

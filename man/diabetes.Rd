@@ -3,7 +3,7 @@
 \docType{data}
 \title{The Pima Indian Diabetes dataset}
 \description{
-  This is the Pima Indian diabetes dataset from the UCI Machine Learning Repository
+  This is the Pima Indian diabetes dataset from the UCI Machine Learning Repository.
 }
 \usage{data(diabetes)}
 \format{
@@ -29,6 +29,6 @@
 \examples{
 #---Feature selection using SFS with the LDA classifier--
 data(diabetes)
-sfs(diabetes,"lda",repet=5)
+sfs(diabetes,"lda",repet=4)
 }
 \keyword{datasets}

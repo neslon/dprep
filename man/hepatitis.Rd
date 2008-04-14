@@ -33,7 +33,7 @@ This dataset contains a large number of missing values.
   }
 }
 \details{
-The original dataset has the classes labels in the first column.
+The original dataset has the class labels in the first column.
 }
 \source{
 The UCI Machine Learning Database Repository at:
@@ -48,6 +48,6 @@ Scientific American, Volume 248. }
 \examples{
 #------Report and plot of missing values ------
 data(hepatitis)
-imagmiss(hepatitis,"hepatitis")
+imagmiss(hepatitis,"Hepatitis")
 }
 \keyword{datasets}

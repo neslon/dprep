@@ -13,11 +13,11 @@ cv10log(data, repet,maxwts=2500)
   \item{data}{ The name of the dataset}
   \item{repet}{ The number of repetitions}
   \item{maxwts}{ The maximum number of weights to be estimated. It must be an integer
-                 number greater than the number of predictors of the dataset}
+                 greater than the number of predictors of the dataset.}
 }
 \value{
 The mean cross validation error for the classifier based on logistic regression
-using the number of repetition} 
+using the number of repetitions} 
 \references{ 
 Ripley, B.D. (1996). Pattern recognition and Neural networks. Cambridge University Press
 

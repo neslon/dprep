@@ -8,7 +8,7 @@
 signorm(data)
 }
 \arguments{
-  \item{data}{ the dataset to be normalized, including classes}
+  \item{data}{ The dataset to be normalized, including classes}
 }
 \details{
   This method transforms the input data nonlinearly into [-1,1] using
@@ -16,11 +16,11 @@ a sigmoid function. The original data is first centered about the
 mean, and then mapped to the almost linear region of the sigmoid.
 Is especially appropriate when outlying values are present.
 
-Removes classes before normalization, and returns normalized data set
+Removes classes before normalization, and returns the normalized data set
 complete with classes rejoined.
 }
 \value{
-  \item{sigdata}{ original dataset normalized}
+  \item{sigdata}{ Original dataset normalized}
   }
 \references{ Hann, J., Kamber, M. (2000). Data Mining: Concepts and Techniques. 
  Morgan Kaufman Publishers.

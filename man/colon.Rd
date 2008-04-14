@@ -1,15 +1,15 @@
 \name{colon}
 \alias{colon}
 \docType{data}
-\title{The Alon et al.'s colon dataset}
+\title{Alon et al.'s colon dataset}
 \description{
-This is the Alon et al.'s Colon cancer dataset which contains information of 
-62 samples on 2000 genes. The samples belong to tumor and normal colon tissues.
+This is Alon et al.'s Colon cancer dataset which contains information on 
+62 samples for 2000 genes. The samples belong to tumor and normal colon tissues.
 }
 \usage{data(colon)}
 \format{
-  A data frame with 62 observations on 2000 genes. An additional column contains the 
-tissues classes.
+  A data frame with 62 observations for 2000 genes. An additional column contains the 
+tissue classes.
 }
 \source{ The data is available at:
 \itemize{

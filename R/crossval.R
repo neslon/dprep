@@ -1,4 +1,4 @@
-"crossval" <-
+`crossval` <-
 function(data,nparts=10,method=c("lda","knn","rpart"),kvec=5,repet)
 {
 # This function finds an estimate for the
@@ -31,7 +31,7 @@ datap <- azar[cc,  ]
 datat <- azar[ - cc,  ]
 tempo <- lda(as.matrix(datat[, 1:p - 1]), datat[, p])
 tempo1 <- predict(tempo, as.matrix(datap[, 1:p -1]))$class
-salida[j] <- sum(tempo1 != as.numeric(datap[, p]))
+salida[j] <- sum(as.numeric(tempo1) != as.numeric(datap[, p]))
 }
 errorcv[i] <- sum(salida)/n
 }
@@ -66,7 +66,7 @@ nombres<-colnames(datos)
    arbol <- rpart(f1, data = datat, method="class")
    pd1<-predict(arbol,datap)
    pd2=max.col(pd1)
-   salida[j] <- sum(pd2!=datap[, p])
+   salida[j] <- sum(pd2!=as.numeric(datap[, p]))
   }
 ecv[kk] <- sum(salida)/n
 }
@@ -93,7 +93,7 @@ datap <- azar[cc,  ]
 datat <- azar[ - cc,  ]
 tempo <- knn(as.matrix(datat[, 1:p - 1]),
 as.matrix(datap[, 1:p - 1]), datat[, p], kvec)
-salida[j] <- sum(tempo != as.numeric(datap[, p]))
+salida[j] <- sum(as.numeric(tempo) != as.numeric(datap[, p]))
 }
 ecv[kk] <- sum(salida)/n
 }

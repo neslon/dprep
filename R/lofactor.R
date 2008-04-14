@@ -1,4 +1,4 @@
-"lofactor" <-
+`lofactor` <-
 function(data,k)
 {
 # A function that finds the local outlier factor (Breunig,2000) of

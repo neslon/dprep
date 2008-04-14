@@ -1,4 +1,4 @@
-"distan2" <-
+`distan2` <-
 function(x,y,vnom){
 indices=1:length(x)
 if(length(vnom)==length(x))

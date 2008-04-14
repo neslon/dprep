@@ -1,5 +1,5 @@
-"parallelplot" <-
-function (x, name="",comb=0,class=0,obs=rep(0,0),col = 2, lty = 1, ...) 
+`parallelplot` <-
+function (x, name="",comb=-1,class=0,obs=rep(0,0),col = 2, lty = 1, ...) 
 {
 
 #Function to create a parallel coordinate plot for a dataset.
@@ -52,17 +52,15 @@ graphtitle=paste("Parallel Coordinate Plot for ",name)
      {
                    
       j=1
-      def.par=par(mfrow=c(2,2))
+      def.par<-par(mfrow=c(2,2),font.lab=2,font.sub=2,cex=.75,las=2)
    
 #draw the different graphs, 4 to each screen
       for (k in 1:ncol(numgraphs))
          {
            if (k %% 4==1) {
-#win.graph()
-par(mfrow=c(2,2))
-}          
+get(getOption("device"))()
+par(mfrow=c(2,2))}          
            varorder=numgraphs[,j]
-           par(font.lab=2,font.sub=2,cex=.75,las=2)
            subtitle=paste("Combination #",j)
            matplot(1:c, t(x[,varorder]), type = "l", col = col, lty = lty, xlab = "", ylab = "",main= 
 graphtitle, sub=subtitle,axes = FALSE, ...)
@@ -70,17 +68,19 @@ graphtitle, sub=subtitle,axes = FALSE, ...)
            for (i in 1:c) lines(c(i, i), c(0, 1), col = "grey70")
            j=j+1
          }
+      par(def.par)
        }    
      
 # else if only one particular combination is desired
   else
     {
-       varorder=numgraphs[,comb]
-def.par=par(font.lab=2,font.sub=2,cex=.75,las=2,bg=gray(.8))
-        subtitle=paste("Combination #",comb)
-       matplot(1:c, t(x[,varorder]), type = "l", col = col, lty = lty, xlab = "", ylab = "",main= graphtitle,sub=subtitle, axes = FALSE, ...)
-       axis(1, at = 1:c, labels = colnames(x[,varorder]))      
-       for (i in 1:c) lines(c(i, i), c(0, 1), col = "grey70")
+     if (comb==-1) varorder = 1:c
+     else varorder=numgraphs[,comb]
+     def.par<-par(font.lab=2,font.sub=2,cex=.75,las=2,bg=gray(.8))
+     subtitle=("Original Attribute Order")
+     matplot(1:c, t(x[,varorder]), type = "l", col = col, lty = lty, xlab = "", ylab = "",main= graphtitle,sub=subtitle, axes = FALSE, ...)
+     axis(1, at = 1:c, labels = colnames(x[,varorder]))      
+     for (i in 1:c) lines(c(i, i), c(0, 1), col = "grey70")
         
        # if the user desires to highlight a particular observation
        if (length(obs)!=0)
@@ -95,9 +95,7 @@ def.par=par(font.lab=2,font.sub=2,cex=.75,las=2,bg=gray(.8))
           text(c,x[obsers,varorder[c]],rownames(x[obsers,]),pos=3)
           palette("default")
         }
-        
-    }
-      
+  }        
  invisible()
  par(def.par)
 }

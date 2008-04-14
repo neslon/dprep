@@ -1,12 +1,15 @@
 Package: dprep
+Type: Package
 Title: Data preprocessing and visualization functions for
-               classification
-Version: 1.0
-Author: Edgar Acuna<edgar@cs.uprm.edu> and  Caroline Rodriguez<caroline@math.uprm.edu>
-Description: Functions for normalization, treatment of missing values, discretization,
-              outlier detection, feature selection,  and visualization
-Suggests: stats, class, MASS, rpart, nnet
-Maintainer: Edgar Acuna <edgar@cs.uprm.edu>
+        classification
+Version: 2.0
+Date: 2008-04-14
+Author: Edgar Acuna<edgar@cs.uprm.edu>, and members of the CASTLE group at UPR-Mayaguez, Puerto Rico.
+Maintainer: Edgar Acuna <edgar@math.uprm.edu>
+Description: Functions for normalization, handling of missing values,
+        discretization, outlier detection, feature selection, and
+        visualization
+Depends: MASS, nnet, lattice, class
+Suggests: rpart
 License: GPL
-URL: http://math.uprm.edu/~edgar/
-Packaged: Sat Jul  9 06:31:56 2005; edgar acuna
+Packaged: Mon Apr 14 08:26:22 2008; edgar

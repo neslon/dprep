@@ -1,4 +1,4 @@
-"maxlof" <-
+`maxlof` <-
 function(data,name="",minptsl=10,minptsu=20)
 {
 

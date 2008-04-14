@@ -8,10 +8,10 @@ This is a function to apply z-Score normalization to a matrix or dataframe.
 znorm(data)
 }
 \arguments{
-  \item{data}{ the dataset to be normalized, including classes}
+  \item{data}{ The dataset to be normalized, including classes}
 }
 \details{
-  By using this type of normalization, the mean of th transformed set
+  By using this type of normalization, the mean of the transformed set
 of data points is reduced to zero by subtracting the mean of each
 attribute from the values of the attributes and dividing the result
 by the standard deviation of the attribute. Uses the function
@@ -36,4 +36,5 @@ plot(diabetes[,1])
 plot(diab.znorm[,1])
 par(op)
 }
+
 \keyword{manip}

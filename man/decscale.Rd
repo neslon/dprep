@@ -11,13 +11,13 @@ is less than or equal to 1.
 decscale(data)
 }
 \arguments{
-  \item{data}{ dataset to be scaled}
+  \item{data}{ The dataset to be scaled}
 }
 \details{
   Uses the scale function found in the R base package.
 }
 \value{
-  \item{decdata }{original matrix that has been scaled by decimal scaling}
+  \item{decdata }{ The original matrix that has been scaled by decimal scaling}
 }
 \author{Caroline Rodriguez and Edgar Acuna}
 \examples{

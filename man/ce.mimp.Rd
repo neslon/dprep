@@ -1,10 +1,10 @@
 \name{ce.mimp}
 \alias{ce.mimp}
 \title{Mean or median imputation}
-\description{  A function that detects location of missing values
+\description{  A function that detects the location of missing values
 by class, then imputes the missing values that occur in the features,
-using mean or median imputation, as specified by the user. If the feature
-is nominal then a mode imputation is done.
+using mean or median imputation, as selected by the user. If the feature
+is nominal then imputation is done using the mode.
 }
 \usage{
 ce.mimp(w.cl, method = c("mean", "median"), atr, nomatr = 0)
@@ -30,6 +30,6 @@ Classification, Clustering and Data Mining Applications. Springer-Verlag Berlin-
 \examples{
 data(hepatitis)
 #--------Mean Imputation---------- 
-ce.impute(hepatitis,"mean",1:19)
+hepa.mean.imp=ce.impute(hepatitis,"mean",1:19)
 }
-\keyword{manip}
+\keyword{ manip }

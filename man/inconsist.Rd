@@ -26,7 +26,8 @@ Pacific-Asia Conference on Knowledge Discovery and Data Mining
 \examples{
 ##---- Calculating Inconsistency ----
 data(bupa)
-disbupa=disc.ew(bupa,1:6)
-inconsist(disbupa)
+bupa.discew=disc.ew(bupa,1:6)
+inconsist(bupa.discew)
 }
+
 \keyword{misc}

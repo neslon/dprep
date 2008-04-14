@@ -3,8 +3,8 @@
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{ Imputation in supervised classification}
 \description{
-  This function performs imputation by mean, median and knn 
-in datasets for supervised classification.
+  This function performs data imputation in datasets for supervised classification by using
+mean, median or knn imputation methods.
 }
 \usage{
 ce.impute(data, method = c("mean", "median", "knn"), atr,
@@ -36,6 +36,7 @@ data(hepatitis)
 #--------Median Imputation-----------
 #ce.impute(hepatitis,"median",1:19)
 #--------knn Imputation--------------
-ce.impute(hepatitis,"knn",k1=10)
+hepa.imputed=ce.impute(hepatitis,"knn",k1=10)
 }
-\keyword{manip}
+
+\keyword{ manip }% 

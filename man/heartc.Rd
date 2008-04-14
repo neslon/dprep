@@ -44,6 +44,6 @@ The UCI Machine Learning Database Repository at:
 \examples{
 #----Detecting outliers using the Relief---
 data(heartc)
-relief(heartc,200,0.4,vnom=c(2,3,6,7,9,11:13))
+relief(heartc,100,0.4,vnom=c(2,3,6,7,9,11:13))
 }
 \keyword{datasets}

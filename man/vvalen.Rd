@@ -8,7 +8,6 @@
 \usage{
 vvalen(data)
 }
-%- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{data}{The name of the dataset to be tested }
 }
@@ -24,4 +23,5 @@ indicates homocedasticity.
 data(colon)
 vvalen(colon)
 }
+
 \keyword{misc}

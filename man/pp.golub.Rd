@@ -7,7 +7,7 @@ This is the preprocessed Golub's dataset, where the training and the learning
 set are first joined and then preprocessed according to the Dudoit et al.'s paper.}
 \usage{data(pp.golub)}
 \format{
-  A data frame with 72 observations on the following 3572 variables.
+  A data frame with 72 observations on 3572 variables.
 }
 \source{
 This data set is available at:
@@ -17,7 +17,7 @@ This data set is available at:
     }
 }
 \references{
-Dudoit, S., Fridlyand, J. & Speed, T. P. (2002) Comparison of discrimination methods for the classi¯cation of tumors suing gene
+Dudoit, S., Fridlyand, J. & Speed, T. P. (2002) Comparison of discrimination methods for the classification of tumors suing gene
 expression data. J Am Stat Assoc, 97 (457), 77--87.
 
 Golub, T. R., Slonim, D. K., Tamayo, P., Huard, C., Gaasenbeek, M., Mesirov, J. P., Coller, H., Loh, M. L., Downing, J. R.,

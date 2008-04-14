@@ -2,21 +2,21 @@
 \alias{chiMerge}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{ Discretization using the Chi-Merge method}
-\description{This function performs supervised discretization using the Chi Merge method
+\description{This function performs supervised discretization using the Chi Merge method.
 }
 \usage{
 chiMerge(data, varcon, alpha = 0.1)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{data}{The name of the dataset to be discretize}
+  \item{data}{The name of the dataset to be discretized}
   \item{varcon}{ Vector of continuous variables}
   \item{alpha}{ The significance level}
 }
 \details{
-In case of datasets containing negative values  apply first a range normalization
+In case of datasets containing negative values apply first a range normalization
 to change the range of the attributes values to an interval containing positive values.
-The discretization process slows down when the number of variables increases (say for more 
+The discretization process becomes slow when the number of variables increases (say for more 
 than 100 variables).  
 }
 \value{
@@ -31,10 +31,11 @@ John Wiley. New York.
 \examples{
 #-----Discretization using the ChiMerge method
 data(my.iris)
-a=chiMerge(my.iris,1:4,alpha=0.05)
+iris.disc=chiMerge(my.iris,1:4,alpha=0.05)
 #-----Applying chiMerge a dataset containing negative values 
 #data(ionosphere)
 #normionos=rangenorm(ionosphere,"mmnorm")
-#b=chiMerge(normionos,1:32)
+#ionos.disc=chiMerge(normionos,1:32)
 }
-\keyword{manip}
+
+\keyword{ manip }

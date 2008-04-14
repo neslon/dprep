@@ -1,4 +1,4 @@
-"mmnorm" <-
+`mmnorm` <-
 function (data,minval=0,maxval=1) 
 {
 #This is a function to apply min-max normalization to a matrix or dataframe.

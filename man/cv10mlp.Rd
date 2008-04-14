@@ -19,16 +19,16 @@ repet)
   \item{repet}{ The number of repetitions}
 }
 \value{
-Returns the mean cross validation for the multilayer perceptron classifier}
+Returns the mean cross validation for the multilayer perceptron classifier.}
 \references{
 Ripley, B.D. (1996). Pattern recognition and Neural networks. Cambridge University Press
 
-Venables,W.N., and Ripley, B.D. (2002). Modern Applied Statistics with S. Fourth edition, Springer}}
+Venables,W.N., and Ripley, B.D. (2002). Modern Applied Statistics with S. Fourth edition, Springer}
 \author{ Edgar Acuna}
 \seealso{\code{\link{crossval}}, \code{\link{cv10log}} }
 \examples{
 #-----cross validation using the MLP classifier---
 data(heartc)
-cv10mlp(heartc,25,decay=0.1,maxwts=1000,maxit=100,repet=5)
+cv10mlp(heartc,25,decay=0.1,maxwts=1000,maxit=100,repet=2)
 }
 \keyword{classif}

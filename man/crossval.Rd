@@ -3,7 +3,7 @@
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{ Cross validation estimation of the misclassification error}
 \description{
-  Computation of the misclassification error for the  LDA, KNN and rpart cllasifiers by cross validation}
+  Computation of the misclassification error for the  LDA, KNN and rpart classifiers by cross validation}
 \usage{
 crossval(data, nparts = 10, method = c("lda", "knn", "rpart"), 
 kvec = 5, repet)
@@ -11,9 +11,9 @@ kvec = 5, repet)
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{data}{ The name of the dataset}
-  \item{nparts}{ The number of folds in which the dataset is divided. By default nparts=10}
-  \item{method}{ The name of the classifier to be used: LDA,KNN, Rpart}
-  \item{kvec}{ The number of nearest neighbors to be used for the KNN classifier}
+  \item{nparts}{ The number of folds in which the dataset is divided. By default nparts=10.}
+  \item{method}{ The name of the classifier to be used: LDA,KNN, Rpart.}
+  \item{kvec}{ The number of nearest neighbors to be used for the KNN classifier.}
   \item{repet}{ The number of repetitions}
 }
 \value{

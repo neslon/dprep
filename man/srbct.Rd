@@ -1,17 +1,17 @@
 \name{srbct}
 \alias{srbct}
 \docType{data}
-\title{The Khan et al.'s small round blood cells dataset}
+\title{Khan et al.'s small round blood cells dataset}
 \description{
-The sbrct dataset which contains information of 63 samples and 2308 genes. The samples
+The sbrct dataset which contains information on 63 samples and 2308 genes. The samples
 are distributed in four classes as follows: 8 Burkitt Lymphoma (BL), 23 Ewing Sarcoma
  (EWS), 12 neuroblastoma (NB), and 20 rhabdomyosarcoma (RMS). 
- The last column contains the labels of the fourth classes
+ The last column contains the class labels.
 }
 \usage{data(srbct)}
 \format{
- A data frame containing 63 observations of 2308. The last column of the dat frame 
-contains the class labels for each observations. 
+ A data frame containing 63 observations with 2308 attributes each. The last column of 
+the dat frame contains the class labels for each observation. 
 }
 \source{
 The data set was  obtained, as binary R file from Marcel Dettling's web site:
@@ -28,8 +28,8 @@ expression profiling and artificial neural networks. Nature Medicine, Volume 7, 
 \examples{
 #---z-score Normalization
 data(srbct)
-rangenorm(srbct,"znorm")
-#---feature selection using the RELIEF-----
+srbct.rnorm=rangenorm(srbct,"znorm")
+#---feature selection using the RELIEF feature selection algorithm-----
 #relief(srbct,63,0.12)
 }
 \keyword{datasets}

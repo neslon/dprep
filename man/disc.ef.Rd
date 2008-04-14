@@ -11,11 +11,11 @@ disc.ef(data, varcon, k)
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{data}{The dataset to be discretized}
-  \item{varcon}{A vector conatining the continuous features}
-  \item{k}{ the number of intervals to be used.}
+  \item{varcon}{A vector containing the continuous features}
+  \item{k}{ The number of intervals to be used}
 }
 \value{
-Returns a new data matrix with discretized values
+Returns a new data matrix with discretized values.
 }
 \references{
 Kantardzic M. (2003). Data Mining: Concepts, Models, methods, and Algorithms. 
@@ -25,7 +25,7 @@ John Wiley. New York.}
 \examples{
 #Discretization using the equal frequency method
 data(bupa)
-disc.ef(bupa,1:6,8)
+bupa.disc.ef=disc.ef(bupa,1:6,8)
 }
 \keyword{manip}
 

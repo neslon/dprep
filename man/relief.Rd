@@ -8,23 +8,24 @@ This function implements the RELIEF feature selection algorithm.
 relief(data, nosample, threshold,vnom)
 }
 \arguments{
-  \item{data}{ the dataset for which feature selection will be carried out}
-  \item{nosample}{ number of instances drawn from the original dataset}
-  \item{threshold}{ the cutoff point to select the features}
- \item{vnom}{ a vector containing the indexes of the nominal features}
+  \item{data}{ The dataset for which feature selection will be carried out}
+  \item{nosample}{ The number of instances drawn from the original dataset}
+  \item{threshold}{ The cutoff point to select the features}
+ \item{vnom}{ A vector containing the indexes of the nominal features}
 }
 \details{
   The general idea of this method is to choose the features that can be most
 distinguished between classes. These are known as the relevant features. At 
 each step of an iterative process, an instance x is chosen at random from
-the dataset and the weight for each feature is updated adcording to the 
+the dataset and the weight for each feature is updated according to the 
 distance of x to its Nearmiss and NearHit.
 }
 \value{
-  \item{relevant}{ a table that gives the frequency with which the
-feature was selected as relevant over the trials performed, and
-the average weight of the feature.}
- \item{a plot}{ a plot of the weights of the features}
+  \item{relevant}{ A table that gives the ratio between the frequency 
+with which the feature was selected as relevant and the total number of
+trials performed in one column, and the average weight of the feature
+in another.}
+ \item{a plot}{ A plot of the weights of the features}
 }
 \references{KIRA, K. and RENDEL, L. (1992). The Feature Selection Problem : Traditional
 Methods and a new algorithm. Proc. Tenth National Conference on Artificial
@@ -40,4 +41,5 @@ Vol7, 1, 39-55.
 data(my.iris)
 relief(my.iris,150,0.01)
 }
+
 \keyword{methods}

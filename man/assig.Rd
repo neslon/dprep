@@ -17,4 +17,5 @@ assig(x, points, nparti, n)
 \author{Luis Daza}
 
 \seealso{\code{\link{disc.mentr}}}
+
 \keyword{ math}% at least one, from doc/KEYWORDS

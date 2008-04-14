@@ -1,4 +1,4 @@
-"softmaxnorm" <-
+`softmaxnorm` <-
 function (data) 
 {
 #This is a function to apply softmax normalization to a matrix or dataframe.

@@ -1,4 +1,4 @@
-"outbox" <-
+`outbox` <-
 function(data,nclass)
 {#******************************************************************
 #This function detects univariate outliers simultaneously using boxplots

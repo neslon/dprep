@@ -1,4 +1,4 @@
-"imagmiss" <-
+`imagmiss` <-
 function(data,name="")
 {
 
@@ -34,7 +34,7 @@ function(data,name="")
    cat("\nPercent of features with missing values: ")
    cat(length(which(colSums(is.na(data))!=0))/dim(data)[2]*100)
    cat("\nNumber of instances with missing values: ")
-   cat(length(which(rowSums(is.na(data))!=0, arr.ind=T)))
+   cat(length(which(rowSums(is.na(data))!=0, arr.ind=TRUE)))
    cat("\nPercent of instances with missing values: ")
    cat(length(which(rowSums(is.na(data))!=0))/dim(data)[1]*100)
    cat("\n")

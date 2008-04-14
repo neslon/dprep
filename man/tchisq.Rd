@@ -14,4 +14,5 @@ tchisq(obs)
 }
 \author{ Jaime Porras}
 \seealso{\code{\link{chiMerge}}}
-\keyword{math}% at least one, from doc/KEYWORDS
+
+\keyword{math}

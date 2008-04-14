@@ -1,14 +1,13 @@
 \name{baysout}
 \alias{baysout}
 \title{
-Outlier detection  using the Bay and Schwabacher's algorithm.
+Outlier detection using Bay and Schwabacher's algorithm.
 }
 \description{
   This function implements the algorithm for outlier detection found
-in Bay and Schwabacher(2003), which assigns an outlyingness measure to observations and 
-returns the indexes of those having the largest measures. The number
-of outliers to be returned as specified by the user.
-
+in Bay and Schwabacher(2003). The algorithm assigns an outlyingness measure to each 
+observation and returns the indexes of those observations having the largest measures. 
+The number of outliers to be returned is specified by the user.
 }
 \usage{
 baysout(D, blocks = 5, k = 3, num.out = 10)
@@ -38,4 +37,3 @@ data(bupa)
 bupa.out=baysout(bupa[bupa[,7]==1,1:6],blocks=10,num.out=10)
 }
 \keyword{methods}
-

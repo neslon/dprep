@@ -1,4 +1,4 @@
-"knneigh.vect" <-
+`knneigh.vect` <-
 function(x,data,k)
 {
 #Function that returns the distance from a vector "x" to   

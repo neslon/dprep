@@ -3,7 +3,7 @@
 \docType{data}
 \title{ The Vehicle dataset}
 \description{
-  This is the vehicle dataset from the UCI Machine Learning Repository 
+  This is the Vehicle dataset from the UCI Machine Learning Repository 
 }
 \usage{data(vehicle)}
 \format{

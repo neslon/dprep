@@ -9,15 +9,15 @@ surveyplot(datos, dataname = "", orderon = 0, class = 0,
 obs = rep(0, 0), lwd = 1)
 }
 \arguments{
-  \item{datos}{ matrix of values for classification to be plotted}
-  \item{dataname}{\code{dataname} name of data set to appear in plot title}
-  \item{orderon}{\code{orderon} column number by which to order the dataset}
-  \item{class}{ \code{class} class for which to limit plotting}
-  \item{obs}{ \code{obs} list of observations to be highlighted}
-  \item{lwd}{\code{lwd} value to control width of the line}
+  \item{datos}{ A matrix of values for supervised classification}
+  \item{dataname}{\code{dataname} Name of data set to appear in plot title}
+  \item{orderon}{\code{orderon} Column number by which to order the dataset}
+  \item{class}{ \code{class} Class for which to limit plotting}
+  \item{obs}{ \code{obs} List of observations to be highlighted}
+  \item{lwd}{\code{lwd} Value to control width of the line}
 }
 \value{
-  returns a surveyplot of the data matrix
+  Returns a surveyplot of the data matrix
 }
 \details{
 This plot is not recommended for a large number of features (say more than 50)

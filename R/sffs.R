@@ -1,4 +1,4 @@
-"sffs" <-
+`sffs` <-
 function(data,method=c("lda","knn","rpart"),kvec=5,repet=10)
 {
 # *******************************************************

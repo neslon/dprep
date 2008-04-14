@@ -25,7 +25,7 @@
     }
 }
 \examples{
-#---Sequential forward feature selection using the rpart classifier---
+#---Sequential forward feature selection using the lda classifier---
 data(bupa)
 sfs(bupa,"lda",repet=10)
 }

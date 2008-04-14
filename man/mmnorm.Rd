@@ -8,22 +8,22 @@
 mmnorm(data,minval=0,maxval=1)
 }
 \arguments{
-  \item{data}{ the dataset to be normalized, including classes}
-  \item{minval} {the minimun value of the transformed range}
-  \item{maxval} {the maximum value of the transformed range}
+  \item{data}{The dataset to be normalized, including classes}
+  \item{minval}{The minimun value of the transformed range}
+  \item{maxval}{The maximum value of the transformed range}
 }
 \details{
   Min-max normalization subtracts the minimum value of an attribute from each value
 of the attribute and then divides the difference by the range of the attribute.
 These new values are multiplied by the new range of the attribute
 and finally added to the new minimum value of the attribute.
-These operations transform the data into a new range, generally [0,1].
+These operations transform the data into a new range, generally [0,1]. The function
+removes classes (assuming they are in last column) before normalization, and 
+returns a normalized data set, complete with classes. Uses the function scale from the base package.
 
-Removes classes before normalization, and returns normalized data set
-complete with classes rejoined.
 }
 \value{
-  \item{zdata3}{ the original dataset normalized by min-max normalization.}
+  \item{zdata3}{ The normalized dataset}
 }
 \references{ Hann, J., Kamber, M. (2000). Data Mining: Concepts and Techniques. 
  Morgan Kaufman Publishers.

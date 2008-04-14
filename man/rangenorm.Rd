@@ -3,25 +3,22 @@
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{range normalization }
 \description{
- Performs several methods of range normalization 
+ Performs several methods of range normalization. 
 }
 \usage{
-rangenorm(data, method = c("znorm", "mmnorm", "decscale", 
-"signorm", "softmaxnorm"),superv=TRUE)
+rangenorm(data, method = c("znorm", "mmnorm", "decscale","signorm", "softmaxnorm"),superv=TRUE)
 }
-%- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{data}{the name of the dataset to be normalized}
-  \item{method}{the discretization method to be used:"znorm", "mmnrom", "decscale", "signorm", "softmaxnorm"}
+  \item{data}{The name of the dataset to be normalized}
+  \item{method}{The discretization method to be used:"znorm", "mmnrom", "decscale", "signorm", "softmaxnorm"}
   \item{superv} {superv=T for supervised data, that data including the class labels in the last column. 
 if superv=F means that the data to be used is unsupervised.}
 }
 \details{
-  In the znorm  normalization, the mean of each attribute of the transformed set
+  In the znorm normalization, the mean of each attribute of the transformed set
 of data points is reduced to zero by subtracting the mean of each
-attribute from the values of the attributes and dividing the result
-by the standard deviation of the attribute. Uses the function
-scale found in the base library.
+attribute from the values of the attributes and dividing the difference 
+by the standard deviation of the attribute. Uses the function scale found in the base library.
 
   Min-max normalization (mmnorm) subtracts the minimum value of an attribute from each value
 of the attribute and then divides the difference by the range of the attribute.
@@ -77,4 +74,3 @@ plot(bupa.soft[,1])
 par(op)
 }
 \keyword{manip}
-

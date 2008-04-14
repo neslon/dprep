@@ -1,4 +1,4 @@
-"sbs1" <-
+`sbs1` <-
 function(data,indic,correct0,kvec,method=c("lda","knn","rpart"))
 {
 # This function performs a step of the Backward selection method using the classifiers

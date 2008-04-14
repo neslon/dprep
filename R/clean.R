@@ -1,4 +1,4 @@
-"clean" <-
+`clean` <-
 function (w,tol.col=0.5,tol.row=0.3,name="") 
 
 {

@@ -1,4 +1,4 @@
-"maxdist" <-
+`maxdist` <-
 function(dneighbors)
 {
 #Function used by baysout to find the largest value of a distance vector

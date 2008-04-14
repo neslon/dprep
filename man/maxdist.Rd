@@ -1,18 +1,19 @@
 \name{maxdist}
 \alias{maxdist}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{Auxiliary function for computing the Bay's algorithm }
+\title{Auxiliary function used when executing the Bay's algorithm for outlier detection }
 \description{
-This function is used by baysout to find the largest value of a 
-distance vector. Returns the value and the index number
+This function is used by the function baysout in this package, to find the largest value of a 
+distance vector. Returns the value and the index number of the largest distance.
 }
 \usage{
 maxdist(dneighbors)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{dneighbors}{ ~~Describe \code{dneighbors} here~~ }
+  \item{dneighbors}{ The value and the index number of the largest distance}
 }
 \author{Caroline Rodriguez}
 \seealso{\code{\link{baysout}}}
-\keyword{ math }% at least one, from doc/KEYWORDS
+
+\keyword{ math }

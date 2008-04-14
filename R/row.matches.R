@@ -1,4 +1,4 @@
-"row.matches" <-
+`row.matches` <-
 function(y, X) {
 #********************************************
 #This functions finds out the rows in matrix X

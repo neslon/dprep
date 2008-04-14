@@ -11,12 +11,12 @@ sfs1(data, indic, correcto, kvec, method = c("lda", "knn",
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{data}{ name of the dataset to be used.}
-  \item{indic}{ a vector of 0-1 values. }
-  \item{correcto}{ the recognition rate in the previuos step.}
-  \item{kvec}{ the number of neighbors to be used by the knn classifier}
-  \item{method}{ the classifier to be use to select the best features.}
+  \item{data}{ Name of the dataset to be used.}
+  \item{indic}{ A vector of 0-1 values. }
+  \item{correcto}{ The recognition rate in the previuos step.}
+  \item{kvec}{ The number of neighbors to be used by the knn classifier}
+  \item{method}{ The classifier to be used to select the best features.}
 }
 \author{Edgar Acuna}
 \seealso{\code{\link{sffs}}}
-\keyword{methods}% at least one, from doc/KEYWORDS
+\keyword{methods}

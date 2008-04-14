@@ -1,4 +1,4 @@
-"combinations" <-
+`combinations` <-
 function(numcol)
 {
 #A function for constructing the minimal set of permutations

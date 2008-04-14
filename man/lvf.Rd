@@ -4,15 +4,15 @@
 \description{
   Las Vegas Filter uses a random generation of subsets and an 
 inconsistency measure as the evaluation function to determine the
-relevance of features.
+relevance of features in the dataset.
 }
 \usage{
 lvf(data, lambda, maxiter)
 }
 \arguments{
-  \item{data}{ name of the discretized dataset}
-  \item{lambda}{ threshold for the inconsistency}
-  \item{maxiter}{ maximum number of iterations}
+  \item{data}{ Name of the discretized dataset}
+  \item{lambda}{ Threshold for the inconsistency}
+  \item{maxiter}{ Maximum number of iterations}
 }
 \details{
 If the dataset has continuous variables, these must first be discretized. This
@@ -21,9 +21,9 @@ inconsistency of the whole dataset yields a large number of selected features,
 a large lambda yields few selected features.
 }
 \value{
-  \item{bestsubset}{ the best subset of features }
+  \item{bestsubset}{ The best subset of features }
 }
-\references{LIU, H. and SETIONO, R. (1996). A probabilistic approach to feature selectiona
+\references{LIU, H. and SETIONO, R. (1996). A probabilistic approach to feature selection: a
 filter solution. Proc. of the thirteenth International Conference of Machine
 Learning, 319-337.
 }
@@ -32,8 +32,9 @@ Learning, 319-337.
 \examples{
 #---- LVF method ----
 data(my.iris)
-disciris=disc.ew(my.iris,1:6)
-inconsist(disciris)
-lvf(disciris,0,500)
+iris.discew=disc.ew(my.iris,1:6)
+inconsist(iris.discew)
+lvf(iris.discew,0,300)
 }
+
 \keyword{methods}

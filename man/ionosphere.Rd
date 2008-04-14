@@ -11,7 +11,7 @@
 }
 \details{
 The original dataset contains 34 predictors, but we have eliminated the two first features,
-because the first feature has the same value in one the classes and the second feature asumes
+because the first feature had the same value in one of the classes and the second feature assumes
 the value 0 in all observations.
 }
 \source{

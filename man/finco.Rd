@@ -6,20 +6,20 @@ This function selects features using the FINCO algorithm. The dataset
 must contain only discretized values.
 }
 \usage{
-finco(data, level)
+finco(data,level)
 }
 \arguments{
-  \item{data}{name of the dataset containing the discretized values}
-  \item{level}{minimum inconsistency level}
+  \item{data}{Name of the dataset containing the discretized values}
+  \item{level}{Minimum inconsistency level}
 }
 \details{
   The level value must be greater than the inconsistency of the whole dataset, which first
- must be discretized. The function inconsist included in this library  computes inconsistencies.
- A small value of level yields a greater number of selected features.
+ must be discretized. The function inconsist included in this library computes inconsistencies.
+ A small value for level yields a greater number of selected features.
 }
 \value{
-  \item{varselec}{ index of selected features}
-  \item{inconsis}{ inconsistency rates of the selected features}
+  \item{varselec}{ Index of selected features}
+  \item{inconsis}{ Inconsistency rates of the selected features}
 }
 \author{Edgar Acuna}
 \references{Acuna, E , (2003) A comparison of filters and wrappers for feature selection in supervised classification.
@@ -33,8 +33,9 @@ Communication and Control technologies, CCCT03. VolI. p. 468-472. Orlando, Flori
 \examples{
 #---- Feature Selection with FINCO
 data(my.iris)
-disciris=disc.ew(my.iris,1:6)
-inconsist(disciris)
-finco(disciris,0.05)
+iris.discew=disc.ew(my.iris,1:6)
+inconsist(iris.discew)
+finco(iris.discew,0.05)
 }
+
 \keyword{methods}

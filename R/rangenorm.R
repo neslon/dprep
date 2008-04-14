@@ -1,4 +1,4 @@
-"rangenorm" <-
+`rangenorm` <-
 function (data, method=c("znorm","mmnorm","decscale","signorm","softmaxnorm"),superv=TRUE) 
 {
 data=as.matrix(data)
@@ -9,6 +9,7 @@ if (!(method %in% c("znorm","mmnorm","decscale","signorm","softmaxnorm")))
   cat("This normalization method  is not supported by this function.\n")
   return(method)
  }
+
 if(method=="znorm")
 {datanorm=znorm(data)}
 if(method=="mmnorm")
