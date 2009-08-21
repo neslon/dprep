@@ -1,4 +1,4 @@
-`assig` <-
+assig <-
 function(x, points, nparti, n) 
 {
 

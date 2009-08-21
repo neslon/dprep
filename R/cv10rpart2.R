@@ -1,4 +1,4 @@
-`cv10rpart2` <-
+cv10rpart2 <-
 function(datos)
 {
 # This function finds out the number of instances correctly classified by the

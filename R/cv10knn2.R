@@ -1,4 +1,4 @@
-`cv10knn2` <-
+cv10knn2 <-
 function(data, kvec)
 {
 # This function finds out the number of instances correctly classified by

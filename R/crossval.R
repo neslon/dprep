@@ -1,4 +1,4 @@
-`crossval` <-
+crossval <-
 function(data,nparts=10,method=c("lda","knn","rpart"),kvec=5,repet)
 {
 # This function finds an estimate for the

@@ -1,4 +1,4 @@
-`parallelplot` <-
+parallelplot <-
 function (x, name="",comb=-1,class=0,obs=rep(0,0),col = 2, lty = 1, ...) 
 {
 
@@ -58,7 +58,7 @@ graphtitle=paste("Parallel Coordinate Plot for ",name)
       for (k in 1:ncol(numgraphs))
          {
            if (k %% 4==1) {
-get(getOption("device"))()
+#get(getOption("device"))()
 par(mfrow=c(2,2))}          
            varorder=numgraphs[,j]
            subtitle=paste("Combination #",j)

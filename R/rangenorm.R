@@ -1,4 +1,4 @@
-`rangenorm` <-
+rangenorm <-
 function (data, method=c("znorm","mmnorm","decscale","signorm","softmaxnorm"),superv=TRUE) 
 {
 data=as.matrix(data)

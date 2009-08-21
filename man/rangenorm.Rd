@@ -11,7 +11,7 @@ rangenorm(data, method = c("znorm", "mmnorm", "decscale","signorm", "softmaxnorm
 \arguments{
   \item{data}{The name of the dataset to be normalized}
   \item{method}{The discretization method to be used:"znorm", "mmnrom", "decscale", "signorm", "softmaxnorm"}
-  \item{superv} {superv=T for supervised data, that data including the class labels in the last column. 
+  \item{superv}{superv=T for supervised data, that data including the class labels in the last column. 
 if superv=F means that the data to be used is unsupervised.}
 }
 \details{

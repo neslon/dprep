@@ -1,4 +1,4 @@
-`decscale` <-
+decscale <-
 function (data) 
 {
 #This is a function to apply decimal scaling to a matrix or dataframe.

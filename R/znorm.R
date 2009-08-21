@@ -1,4 +1,4 @@
-`znorm` <-
+znorm <-
 function (data) 
 {
 #This is a function to apply z-Score normalization to a matrix or datafram.

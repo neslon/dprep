@@ -1,4 +1,4 @@
-`radviz2d` <-
+radviz2d <-
 function(dataset,name="")
 {
 #require(dprep)

@@ -1,4 +1,4 @@
-`redundancy` <-
+redundancy <-
 function (data) 
 {# This function finds the  number of instances that
  # appear more than once in a dataset along with their

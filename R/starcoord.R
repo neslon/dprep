@@ -1,4 +1,4 @@
-`starcoord` <-
+starcoord <-
 function (data, main = NULL, class = FALSE, outliers=NULL, vars = 0, scale = 1, cex = 0.8, lwd = 0.25, lty =par("lty")) 
 {
     if (is.data.frame(data)) 

@@ -1,4 +1,4 @@
-`vvalen1` <-
+vvalen1 <-
 function (data,classn) 
 {p=dim(data)[2]
 data1=data[data[,p]==classn,]

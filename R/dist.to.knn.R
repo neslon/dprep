@@ -1,4 +1,4 @@
-`dist.to.knn` <-
+dist.to.knn <-
 function(dataset,neighbors)
 {
 

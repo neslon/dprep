@@ -1,4 +1,4 @@
-`reachability` <-
+reachability <-
 function(distdata,k)
 {
 #function that calculates the local reachability density

@@ -1,4 +1,4 @@
-`surveyplot` <-
+surveyplot <-
 function(datos,dataname="",orderon=0,class=0,obs=rep(0,0),lwd=1)
 
 {

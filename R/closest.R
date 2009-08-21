@@ -1,4 +1,4 @@
-`closest` <-
+closest <-
 function(dis,neigh,k)
 {
 # Function used by baysout to select the k vectors that are closest to 

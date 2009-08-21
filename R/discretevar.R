@@ -1,4 +1,4 @@
-`discretevar` <-
+discretevar <-
 function(data,var,n,p) 
 {
   idx<-sort(data[,var],index.return=TRUE)

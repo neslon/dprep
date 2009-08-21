@@ -1,4 +1,4 @@
-`cv10lda2` <-
+cv10lda2 <-
 function(data)
 {
 # This function finds the number of instances correctly classified 

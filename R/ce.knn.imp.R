@@ -1,4 +1,4 @@
-`ce.knn.imp` <-
+ce.knn.imp <-
 function(m,natr=rep(0,0),k1)
 {
 #A function that sends a matrix by class to have missing

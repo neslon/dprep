@@ -1,4 +1,4 @@
-`mo3` <-
+mo3 <-
 function(data) 
 {#*********************************************
 # This function computes the third moment.

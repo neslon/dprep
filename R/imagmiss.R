@@ -1,4 +1,4 @@
-`imagmiss` <-
+imagmiss <-
 function(data,name="")
 {
 

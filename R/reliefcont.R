@@ -1,4 +1,4 @@
-`reliefcont` <-
+reliefcont <-
 function(data,nosample, threshold)
 {
 # *******************************************

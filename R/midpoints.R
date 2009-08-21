@@ -1,4 +1,4 @@
-`midpoints` <-
+midpoints <-
 function(x)
 {
   n <- length(x)

@@ -1,4 +1,4 @@
-`circledraw` <-
+circledraw <-
 function(numpts=200,radius=1)
 {  
  xy=rep(360/numpts, numpts)

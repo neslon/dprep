@@ -22,10 +22,10 @@ Mahalanobis distances}
 Requires uses cov.rob function from the MASS library.
 }
 \value{
-  \item{top1} {Index of observations identified as top outliers by  frequency of selection}
-  \item{topout}{ Index of observations identified as possible outliers 
+  \item{top1}{Index of observations identified as top outliers by  frequency of selection}
+  \item{topout}{Index of observations identified as possible outliers 
 by outlyingness measure}
-  \item{outme}{ Index of observations and their outlyingness measures}
+  \item{outme}{Index of observations and their outlyingness measures}
 }
 \references{
 Rousseeuw, P, and Leroy, A. (1987). Robust Regression and outlier detection. John Wiley & Sons. New York.

@@ -1,4 +1,4 @@
-`ec.knnimp` <-
+ec.knnimp <-
 function(data,nomatr=0,k = 10) 
 {
 #xnom: vector containing the indexes of the nominal variables

@@ -1,4 +1,4 @@
-`reliefcat` <-
+reliefcat <-
 function(data,nosample, threshold,vnom)
 {
 # *******************************************

@@ -1,4 +1,4 @@
-`baysout` <-
+baysout <-
 function(D,blocks=5,k=3,num.out=10)
 {
 #Function that gives the outlyingness measure for the requested number of
@@ -40,7 +40,7 @@ for (cycle in 1:rep){ #for (cycle in 1:1){
     # print(neighbors)
      while ((j <= block.size)&(block.size>=1)){
        if (!(as.integer(rownames(D)[m])==as.integer(rownames(B)[j]))){
- b=B[j,]
+b=B[j,]
 dis = distancia(b,d)
         #if ((0%in%neighbors[j,])|(distancia(b,d)<maxdist(neighbors[j,])[1])){
 if (dis < maxdist(neighbors[j,])[1]){
@@ -66,9 +66,12 @@ if (dis < maxdist(neighbors[j,])[1]){
    if (flag==0)
    {
     Out=top(Out,neighbors,num.out)
+#print(Out)
     c=min(Out)
+#print(c)
    }
- }
+}
+#print(Out)
 xcoord=as.integer(rownames(Out))
 plot(Out,main="Instances with Greatest score from K nearest neighbors",ylab="Median Distance")
 text(1:num.out,Out,rownames(Out),cex=.6,pos=4)

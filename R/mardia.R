@@ -1,4 +1,4 @@
-`mardia` <-
+mardia <-
 function (data) 
 {#************************************
 # Mardia test for multivariate normality

@@ -1,4 +1,4 @@
-`mahaout` <-
+mahaout <-
 function(data,nclass,plot=TRUE)
 {
 #**********************************************************************
@@ -22,7 +22,7 @@ print(rev(sort(roboutl)))
 outme=rev(sort(mbc))
 topo=rev(sort(mbc))[1:10]
 if(plot){
-get(getOption("device"))()
+#get(getOption("device"))()
 plot(rev(sort(mbc)),ylab="Mahalabobis distance")
 text(1:10,topo,names(topo),cex=.6,pos=4)
 }

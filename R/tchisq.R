@@ -1,4 +1,4 @@
-`tchisq` <-
+tchisq <-
 function(obs)
 {
  esp=matrix(0,2,dim(obs)[2])

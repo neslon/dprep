@@ -1,4 +1,4 @@
-`ce.impute` <-
+ce.impute <-
 function(data,method=c("mean","median","knn"),atr,nomatr=rep(0,0),k1=10)
 {
 if (method=="mean")

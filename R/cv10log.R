@@ -1,4 +1,4 @@
-`cv10log` <-
+cv10log <-
 function(data, repet,maxwts=2500)
 {
 #Esta funcion encuentra la estimacion del error de clasificacion

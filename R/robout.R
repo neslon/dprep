@@ -1,4 +1,4 @@
-`robout` <-
+robout <-
 function(data,nclass,meth=c("mve","mcd"),rep=10,plot=TRUE)
 {
 #**********************************************************************
@@ -31,7 +31,7 @@ outme=rev(sort(b))
 topo=rev(sort(b))[1:10]
 #print(topo)
 if(plot){
-get(getOption("device"))()
+#get(getOption("device"))()
 plot(rev(sort(b)),ylab=paste("Mahalabobis distance(",meth,")"))
 text(1:10,topo,names(topo),cex=.6,pos=4)
 }

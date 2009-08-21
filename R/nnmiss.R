@@ -1,4 +1,4 @@
-`nnmiss` <-
+nnmiss <-
 function(x, xmiss, ismiss,xnom, K=1) 
 {
 #x:submatrix of complete rows from original matrix

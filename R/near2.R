@@ -1,4 +1,4 @@
-`near2` <-
+near2 <-
 function(x, data,vnom)
 {
 nd <- length(data[, 1])
