@@ -40,7 +40,7 @@ Proceedings of  the Interface 2003 Computing Science and Statistics. Vol 34.
 \author{Edgar Acuna}
 \examples{
 #---- SFFS feature selection using the knn classifier ----
-data(my.iris)
-sffs(my.iris,method="knn",kvec=5,repet=5)
+data(iris)
+sffs(iris,method="rpart",repet=2)
 }
-\keyword{methods}
+\keyword{Feature Selection}

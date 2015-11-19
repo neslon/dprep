@@ -18,4 +18,4 @@ sbs1(data, indic, correct0, kvec, method = c("lda", "knn", "rpart"))
 }
 \author{ Edgar Acuna}
 \seealso{\code{\link{sffs}}}
-\keyword{methods}
+\keyword{Feature Selection}

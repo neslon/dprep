@@ -1,35 +1,24 @@
 \name{ec.knnimp}
 \alias{ec.knnimp}
-\title{KNN Imputation}
+\title{Imputation using k-nearest neighbors.}
 \description{
-Function to carry out KNN imputation of missing values.
+This function imputes missing values by knn imputation.
 }
 \usage{
-ec.knnimp(data, nomatr, k = 10)
+ec.knnimp(data, nomatr=0, k=10)
 }
 \arguments{
-  \item{data}{ Original dataset with missing values}
-  \item{nomatr}{ Vector containing the indices of nominal attributes}
-  \item{k}{ Numeric value representing the number of neighbors to use for imputation}
+  \item{data}{ matrix containing relevant variables and classes
 }
-\details{
-  This function is called by the function ce.knn.imp which is part of this library, to 
-impute values by class. If called alone the function will impute values based on information
-in the entire matrix and not the classes. Needs also the function: nnmiss.
+\item{nomatr}{ list of nominal attributes}
+\item{k}{ number of neighbors to use for imputation}
 }
 \value{
-  \item{data2}{ contains values belonging to one class (of a larger matrix)
- for which missing values in relevant variables have been imputed.}
+  \item{r }{ matrix with missing values imputed}
 }
-\author{ Edgar Acuna and Caroline Rodriguez}
-\references{Acuna, E. and Rodriguez, C. (2004). The treatment of missing values and its effect in the classifier accuracy. In D. Banks,  L. House, F.R. McMorris, P. Arabie, W. Gaul (Eds).
-Classification, Clustering and Data Mining Applications. Springer-Verlag Berlin-Heidelberg, 639-648. 
-}
-
+\author{Caroline Rodriguez and Edgar Acuna}
 \examples{
-#---- Performing knn imputation----
 data(hepatitis)
-hepa.knnimp=ec.knnimp(hepatitis,k=10)
+hepa.knnimp=ec.knnimp(hepatitis,nomatr=c(1,3:14),k=10)
 }
-
-\keyword{manip}
+\keyword{ Imputation} 

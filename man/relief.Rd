@@ -5,20 +5,20 @@
 This function implements the RELIEF feature selection algorithm.
 }
 \usage{
-relief(data, nosample, threshold,vnom)
+relief(data, nosample, threshold,repet=1)
 }
 \arguments{
   \item{data}{ The dataset for which feature selection will be carried out}
   \item{nosample}{ The number of instances drawn from the original dataset}
   \item{threshold}{ The cutoff point to select the features}
- \item{vnom}{ A vector containing the indexes of the nominal features}
+\item{repet}{The number of repetitions. It is recommended to use at most 10 repetitions}
 }
 \details{
   The general idea of this method is to choose the features that can be most
 distinguished between classes. These are known as the relevant features. At 
 each step of an iterative process, an instance x is chosen at random from
 the dataset and the weight for each feature is updated according to the 
-distance of x to its Nearmiss and NearHit.
+distance of x to its Nearmiss and NearHit. The dataset must have complete cases therefore imputation must be performed in advance.
 }
 \value{
   \item{relevant}{ A table that gives the ratio between the frequency 
@@ -38,8 +38,8 @@ Vol7, 1, 39-55.
 \author{ Edgar Acuna}
 \examples{
 ##---- Feature Selection ---
-data(my.iris)
-relief(my.iris,150,0.01)
+data(iris)
+relief(iris,150,0.01,repet=1)
 }
 
-\keyword{methods}
+\keyword{Feature Selection}

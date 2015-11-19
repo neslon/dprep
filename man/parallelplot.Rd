@@ -40,4 +40,4 @@ parallelplot(bupa,"Bupa Dataset")
 parallelplot(bupa,"Bupa Dataset",comb=0)
 #parallelplot(bupa,"Bupa Dataset",comb=1,c(1,22,50))
 }
-\keyword{ hplot}
+\keyword{ Visualization}

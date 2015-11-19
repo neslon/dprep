@@ -26,4 +26,4 @@ in which the observation was identified as an outlier.}
 data(diabetes)
 outbox(diabetes,nclass=1)
 }
-\keyword{methods}
+\keyword{Outlier Detection}

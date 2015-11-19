@@ -10,9 +10,9 @@ vvalen1(data, classn)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{data}{The name of the datset to be considered}
+  \item{data}{The name of the dataset to be considered}
   \item{classn}{ The class numnber}
 }
 \author{Edgar Acuna}
 \seealso{ \code{\link{vvalen}}}
-\keyword{methods}
+\keyword{math}

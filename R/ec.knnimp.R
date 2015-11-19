@@ -3,36 +3,40 @@ function(data,nomatr=0,k = 10)
 {
 #xnom: vector containing the indexes of the nominal variables
 #data: matrix containing data
-  x <- as.matrix(data)
+  x=data
   N <- dim(x)[1]
   p <- dim(x)[2] 
 
 #Checking if a row has a missing value
-nas <- is.na(drop(x %*% rep(1, p)))
 #print(sum(nas))
-if(sum(nas)==N) stop("Error: All cases have missing values. Cannot compute neighbors.")
-
+#if(sum(nas)==N) stop("Error: All cases have missing values. Cannot compute neighbors.")
+rmiss=which(rowSums(is.na(data))!=0,arr.ind=T)
+#print(rmiss)
 #submatrix with complete rows
 #matrix needed in case xcomplete has only one row
-  xcomplete <- matrix(x[!nas,  ],,p) 
+#print(x)
+  xcomplete <- x[-rmiss,] 
+#print(xcomplete)
   colnames(xcomplete)=seq(p)
 
 #submatrix of rows with at least one missing value
-  xbad <- x[nas,,drop=FALSE ]
-
+  xbad <- x[rmiss,,drop=FALSE ]
+#print(xbad)
 #forming logical vector of nominal variables
  xnom=seq(p) %in% nomatr
-
+#print(xnom)
 #Locating the missing values in the missing submatrix 
   xnas <- is.na(xbad)
   xbadhat <- xbad
+#print(xcomplete)
+#print(xbadhat)
   for(i in seq(nrow(xbad))) 
   {
     xinas <- xnas[i,  ]
     xbadhat[i,  ] <- nnmiss(xcomplete, xbad[i,  ],xinas,xnom, K = k)
   }
-  x[nas,  ] <- xbadhat
+#print(xbadhat)
+  x[rmiss,  ] <- xbadhat
   data2 <-x
   return(data2)
 }
-

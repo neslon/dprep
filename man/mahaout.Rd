@@ -7,12 +7,13 @@ This function finds multivariate outliers by constructing a
 boxplot of the Mahalanobis distance of all the instances. 
 }
 \usage{
-mahaout(data, nclass, plot = TRUE)
+mahaout(data, nclass=0, plot = TRUE)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{data}{Name of the dataset}
-  \item{nclass}{Number of the class to check for outliers}
+  \item{nclass}{Number of the class to check for outliers. By default nclass=0 meaning
+the column of classes it is not used.}
   \item{plot}{ Logical value. If plot=T a plot of the mahalanobis distance is drawn}
 }
 \details{
@@ -35,4 +36,4 @@ data(bupa)
 mahaout(bupa,1)
 }
 
-\keyword{methods}
+\keyword{Outlier Detection}

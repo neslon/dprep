@@ -3,15 +3,16 @@
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{Discretization using the equal width method }
 \description{
-Unsupervised discretization using intervals of equal width. The widths are computed 
-using Scott's formula.
+Unsupervised discretization using intervals of equal width. The widths are computed using Scott's formula.
 }
 \usage{
-disc.ew(data, varcon)
+disc.ew(data, varcon,out=c("symb","num"))
 }
 \arguments{
   \item{data}{The name of the dataset containing the attributes to be discretized}
   \item{varcon}{A vector containing the indexes of the attributes to be discretized}
+\item{out}{To get the discretized dataset in a numerical format write "num". To get
+the discretized in an interval format write "symb"}
 }
 \value{
 Returns a new data matrix with discretized values.}
@@ -22,6 +23,6 @@ Venables, W.N., and Ripley, B.D. (2002). Modern Applied Statistics with S. Fourt
 \examples{
 #----Discretization using the equal frequency method
 data(bupa)
-bupa.disc.ew=disc.ew(bupa,1:6)
+bupa.disc.ew=disc.ew(bupa,1:6,out="num")
 }
-\keyword{manip}
+\keyword{Discretization}

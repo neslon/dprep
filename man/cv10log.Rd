@@ -28,4 +28,4 @@ Venables,W.N., and Ripley, B.D. (2002). Modern Applied Statistics with S. Fourth
 #-----cross validation error for the logistic classifier-------
 data(bupa)
 cv10log(bupa,5)}
-\keyword{classif}
+\keyword{classification}

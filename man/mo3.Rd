@@ -10,7 +10,7 @@ mo3(data)
 }
 \arguments{
   \item{data}{ The dataset containing the features of the multivariate vector for 
-which the third moment will be computed }
+which the third moment will be computed. Do not include the class attribute for supervised datasets }
 }
 \value{
   \item{mo3 }{The third moment of the multivariate distribution} 
@@ -18,7 +18,7 @@ which the third moment will be computed }
 \author{ Edgar Acuna}
 \seealso{ \code{\link{mo4}}, \code{\link{mardia}} }
 \examples{
-data(my.iris)
-mo3(my.iris)
+data(iris)
+mo3(iris[,-5])
 }
 \keyword{multivariate}

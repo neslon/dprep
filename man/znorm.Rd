@@ -37,4 +37,4 @@ plot(diab.znorm[,1])
 par(op)
 }
 
-\keyword{manip}
+\keyword{Normalization}

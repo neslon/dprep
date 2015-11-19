@@ -5,8 +5,7 @@
 \description{
   This dataset contains information concerning heart disease diagnosis. 
 The data was collected from the  Cleveland Clinic Foundation, and it is available 
-at the UCI machine learning Repository. Six instances containing missing values 
-have been deleted from the original dataset. 
+at the UCI machine learning Repository. Six instances containing missing values.
 }
 \usage{data(heartc)}
 \format{
@@ -31,8 +30,9 @@ have been deleted from the original dataset.
 }
 }
 \details{
-Six instances containing missing values have been deleted from the original dataset. 
-This dataset includes continuous, binomial, nominal, and ordinal features.}
+This dataset contains six instances having missing values. It is recommended to impute
+these values before applying other tasks. This dataset includes continuous, binomial, nominal, 
+and ordinal features.}
 \source{
 The UCI Machine Learning Database Repository at:
 \itemize{
@@ -44,6 +44,6 @@ The UCI Machine Learning Database Repository at:
 \examples{
 #----Detecting outliers using the Relief---
 data(heartc)
-relief(heartc,100,0.4,vnom=c(2,3,6,7,9,11:13))
+imagmiss(heartc,"heart-Cleveland")
 }
 \keyword{datasets}

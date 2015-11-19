@@ -17,4 +17,4 @@ discretevar(data, var, n, p)
 }
 \author{ Luis Daza}
 \seealso{\code{\link{disc.mentr}}}
-\keyword{manip}
+\keyword{Discretization}

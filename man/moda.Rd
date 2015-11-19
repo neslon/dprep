@@ -24,4 +24,4 @@ all values that are tied are returned.
 x=c(1,4,2,3,4,6,3,7,8,5,4,3)
 moda(x)
 }
-\keyword{univar}
+\keyword{math}

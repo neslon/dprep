@@ -4,17 +4,19 @@
 \title{ Discretization using the minimum entropy criterion}
 \description{
   This function discretizes the continuous attributes of a data frame 
-using the minumum entropy criterion with the minimum description length 
+using the minumum entropy criterion along with the minimum description length 
 as stopping rule.
 }
 \usage{
-disc.mentr(data, vars)
+disc.mentr(data, varcon,out=c("symb","num"))
 }
 
 \arguments{
   \item{data}{ The name of the dataset to be discretized}
-  \item{vars}{ A vector containing the indices of the columms 
-to be discretized and column containing the classes}
+  \item{varcon}{ A vector containing the indices of the columms 
+to be discretized}
+\item{out}{To get the data discretized in numerical form enter "num".
+To get the data discretized in interval form enter "symb"}
 }
 \value{
 Returns a matrix containing only discretized features.}
@@ -25,7 +27,8 @@ of continuous features. ML-95.
 \author{Luis Daza}
 \seealso{ \link{disc.1r}, \link{disc.ew},\link{disc.ef},\link{chiMerge} }
 \examples{
-data(my.iris)
-iris.discme=disc.mentr(my.iris,1:5)
+#----Discretization using the entropy with Minimum Description Length.
+data(bupa)
+bupa.disc=disc.mentr(bupa,1:6,out="num")
 }
-\keyword{manip}
+\keyword{Discretization}

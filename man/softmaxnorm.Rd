@@ -31,4 +31,4 @@ plot(sonar[,1])
 plot(sonar.sftnorm[,1])
 par(op)
 }
-\keyword{manip}
+\keyword{Normalization}

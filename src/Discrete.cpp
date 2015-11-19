@@ -1,11 +1,13 @@
 #include <R.h>
 #include <Rmath.h>
+#define  MAX 1000
+using namespace std;
 
 double mid_point(double n1, double n2);
 
 double entCI(double input[], int cMatrix[], double partition,int nrows, int begin, int end);
 
-double log2(double x);
+double logd(double x);
 
 double ent(double s[], int cs[], int sCount);
 
@@ -34,7 +36,7 @@ void discrete(double *mIn, int *cIn, double *t,int *ccsize, double *points, int 
 {
 
 	int index=0,d, csize = *ccsize;
-   double t_sel[csize];
+   double t_sel[MAX];
 
    for(int j=0;j<csize;j++) t_sel[j]=0.0;
 
@@ -80,8 +82,11 @@ double mid_point(double n1, double n2)
 
 double entCI(double input[], int cMatrix[], double partition, int nrows,int begin, int end)
 {
-  double s1[nrows], s2[nrows], entropy;
-  int cs1[nrows], cs2[nrows];
+  double* s1=new double[nrows];
+  double* s2=new double[nrows];
+  double entropy;
+  int* cs1= new int[nrows];
+  int* cs2=new int[nrows];
   int s1Count=0, s2Count=0, sCount=0;
     while(input[begin]<partition)
     {
@@ -97,6 +102,10 @@ double entCI(double input[], int cMatrix[], double partition, int nrows,int begi
     entropy=(s1Count/double(sCount))*ent(s1,cs1,s1Count)
                +(s2Count/double(sCount))*ent(s2,cs2,s2Count);
     return entropy;
+delete [] s1;
+delete [] s2;
+delete [] cs1;
+delete [] cs2;
 }
 
 double ent(double s[], int cs[], int sCount)
@@ -108,7 +117,7 @@ double ent(double s[], int cs[], int sCount)
     {
        if(p(i,cs,sCount)!=0.0)
        {
-         sum+=(p(i,cs,sCount)*log2(p(i,cs,sCount)));
+         sum+=(p(i,cs,sCount)*logd(p(i,cs,sCount)));
        }
     }
     if(sum==0.0)
@@ -126,7 +135,7 @@ double fullent(double s[], int cs[], int begin, int end)
     {
        if(p(i,cs,begin,end)!=0.0)
        {
-         sum+=(p(i,cs,begin,end)*log2(p(i,cs,begin,end)));
+         sum+=(p(i,cs,begin,end)*logd(p(i,cs,begin,end)));
        }
     }
     if(sum==0.0)
@@ -177,7 +186,7 @@ double p(int cls, int cs[], int begin, int end)
     return (clsCount/double(end-begin));
 }
 
-double log2(double x)
+double logd(double x)
 {
     return (log(x)/log(2.0));
 }
@@ -185,9 +194,12 @@ double log2(double x)
 double delta(double input[], int cInput[], double partition, int nrows, int begin, int end)
 {
     int nbegin=begin;
-    double s1[nrows], s2[nrows], delta;
-    int cs1[nrows], cs2[nrows];
-    int s1Count=0, s2Count=0, sCount=0;
+    double* s1=new double[nrows];
+    double* s2=new double[nrows];
+    double delta;
+    int* cs1=new int[nrows];
+    int* cs2=new int[nrows];
+    int s1Count=0, s2Count=0;
     while(input[begin]<partition)
     {
         cs1[s1Count]=cInput[begin];
@@ -198,7 +210,6 @@ double delta(double input[], int cInput[], double partition, int nrows, int begi
         cs2[s2Count]=cInput[begin];
         s2[s2Count++]=input[begin++];
     }
-    sCount=s1Count+s2Count;
     int c=0, c1=0, c2=0, maxC[3], minC[3];
     doMaxMinC(cInput,maxC[0],minC[0],nbegin,end);
     doMaxMinC(cs1,s1Count,maxC[1],minC[1]);
@@ -216,14 +227,18 @@ double delta(double input[], int cInput[], double partition, int nrows, int begi
                c2++;
         }
     }
-    delta = log2(pow(3.0,double(c))-2)-(c*fullent(input,cInput,nbegin,end)-
+    delta = logd(pow(3.0,double(c))-2)-(c*fullent(input,cInput,nbegin,end)-
                      c1*ent(s1,cs1,s1Count)-c2*ent(s2,cs2,s2Count));
     return delta;
+  delete [] s1;
+  delete [] s2;
+  delete [] cs1;
+  delete [] cs2;
 }
 
 void do_the_rest(double input[],int cInput[],double t[],double t_sel[],int nrows,int begin,int end,int& index)
 {
-   double entropy[nrows];
+   double* entropy=new double [nrows];
    for(int i=begin;i<end;i++)
    {
         if(t[i]==0.0)
@@ -239,7 +254,7 @@ void do_the_rest(double input[],int cInput[],double t[],double t_sel[],int nrows
    if(idxMinEnt>=0)
    {
      double gain = fullent(input,cInput,begin,end)-entropy[idxMinEnt];
-     double right_side = (log2((end-begin)-1)/(end-begin))
+     double right_side = (logd((end-begin)-1)/(end-begin))
                    +(delta(input,cInput,t[idxMinEnt],nrows,begin,end)/(end-begin));
 
 	 if(gain>right_side && idxMinEnt>=0)
@@ -293,3 +308,4 @@ double min2(double num[],int start, int limit)
    }
    return (min);
 }
+

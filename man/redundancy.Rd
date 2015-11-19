@@ -13,5 +13,5 @@ redundancy(data)
 \author{Edgar Acuna}
 \seealso{\code{\link{clean}}}
 
-\keyword{manip}
+\keyword{misc}
 

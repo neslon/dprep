@@ -50,9 +50,9 @@ function(data,name="")
 
   x=1:ncol1
   y=1:nrow
+data=apply(data,1,as.numeric)
   graph.title=paste("Distribution of missing values by variable for - ",name)
  
-  image(x,y,t(data),col=c(0,topo.colors(100)),xlab="features",ylab="instances",axes=FALSE,main=(graph.title),cex.main=.7)
+  image(x,y,data,col=c(0,topo.colors(100)),xlab="features",ylab="instances",axes=FALSE,main=(graph.title),cex.main=.7)
   axis(1,labels=xaxis,at=ticks)
 }
-

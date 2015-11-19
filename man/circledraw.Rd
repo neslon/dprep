@@ -26,4 +26,4 @@ function for the radviz2d visualization.}
 #----Circledraw examples
 circledraw()
 }
-\keyword{hplot}
+\keyword{misc}

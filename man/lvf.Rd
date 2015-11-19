@@ -31,10 +31,10 @@ Learning, 319-337.
 \seealso{\code{\link{disc.ew}},\code{\link{inconsist}},\code{\link{finco}}}
 \examples{
 #---- LVF method ----
-data(my.iris)
-iris.discew=disc.ew(my.iris,1:6)
+data(iris)
+iris.discew=disc.ew(iris,1:4,out="num")
 inconsist(iris.discew)
-lvf(iris.discew,0,300)
+lvf(iris.discew,0,100)
 }
 
-\keyword{methods}
+\keyword{Feature Selection}

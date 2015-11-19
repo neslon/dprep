@@ -17,4 +17,4 @@ cv10knn2(data, kvec)
 }
 \author{Edgar Acuna}
 \seealso{\code{\link{crossval}}}
-\keyword{classif}
+\keyword{classification}

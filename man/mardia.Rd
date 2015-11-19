@@ -27,11 +27,7 @@ vol. 5 (NY: Wiley), pp. 217-221. }
 \seealso{\code{\link{vvalen}}}
 \examples{
 #-----Mardia test for supervised data-----
-data(my.iris)
-mardia(my.iris)
-#----Mardia test for unsupervised data-----
-data(hawkins)
-haw=cbind(hawkins[,-4],rep(1,75))
-mardia(haw)
+data(iris)
+mardia(iris)
 }
 \keyword{multivariate}

@@ -19,4 +19,4 @@ combinations(numcol)
 coordinates, Journal of the American Statistical Association, 85, 664-675.
 }
 \author{Caroline Rodriguez}
-\keyword{manip}
+\keyword{misc}

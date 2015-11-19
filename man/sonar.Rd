@@ -22,8 +22,9 @@ The UCI Machine Learning Database Repository at:
     }
 }
 \examples{
-#Robust detection of outliers in sonar-class1 using MVE----
+\dontrun{#Robust detection of outliers in sonar-class1 using MVE----
 data(sonar)
 robout(sonar,1,"mve",rep=10)
+}
 }
 \keyword{datasets}

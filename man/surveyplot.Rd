@@ -34,4 +34,4 @@ data(bupa)
 surveyplot(bupa,"Bupa Dataset")
 surveyplot(bupa,"Bupa Dataset",orderon=1,obs=c(6,74,121))
 }
-\keyword{hplot}
+\keyword{Visualization}

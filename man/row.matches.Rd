@@ -18,5 +18,5 @@ row.matches(y, X)
 to be authored by B. Venables}
 \seealso{\code{\link{redundancy}}}
 
-\keyword{manip}
+\keyword{misc}
 

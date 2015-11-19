@@ -15,4 +15,4 @@ cv10rpart2(datos)
 \author{Edgar Acuna}
 \seealso{\code{\link{crossval}}}
 
-\keyword{ classif}
+\keyword{ classification}

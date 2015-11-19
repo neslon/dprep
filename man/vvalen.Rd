@@ -24,4 +24,4 @@ data(colon)
 vvalen(colon)
 }
 
-\keyword{misc}
+\keyword{multivariate}

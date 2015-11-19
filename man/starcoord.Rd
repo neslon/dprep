@@ -34,8 +34,8 @@ star coordinates. Proceedings of KDD 2001.}
 \author{Edgar Acuna and Shiyun Wen }
 \seealso{\code{\link{parallelplot}},  \code{\link{surveyplot}} }
 \examples{
-data(bupa)
-starcoord(bupa, main="Bupa Dataset", class=TRUE, outliers=NULL,vars=0, scale=1,
+data(vehicle)
+starcoord(vehicle, main="Vehicle Dataset", class=TRUE, outliers=NULL,vars=0, scale=1,
 cex=0.8, lwd = 0.25, lty = par("lty"))
 }
-\keyword{hplot}
+\keyword{Visualization}

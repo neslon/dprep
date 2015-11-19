@@ -6,13 +6,15 @@
   Unsupervised discretization using intervals of equal frequencies
 }
 \usage{
-disc.ef(data, varcon, k)
+disc.ef(data, varcon, k,out=c("symb","num"))
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{data}{The dataset to be discretized}
   \item{varcon}{A vector containing the continuous features}
   \item{k}{ The number of intervals to be used}
+\item{out}{To get the discretized dataset in a numerical format write "num". To get
+the discretized in an interval format write "symb"}
 }
 \value{
 Returns a new data matrix with discretized values.
@@ -25,7 +27,7 @@ John Wiley. New York.}
 \examples{
 #Discretization using the equal frequency method
 data(bupa)
-bupa.disc.ef=disc.ef(bupa,1:6,8)
+bupa.disc.ef=disc.ef(bupa,1:6,8,out="symb")
 }
-\keyword{manip}
+\keyword{Discretization}
 

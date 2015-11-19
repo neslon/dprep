@@ -27,8 +27,10 @@ Venables,W.N., and Ripley, B.D. (2002). Modern Applied Statistics with S. Fourth
 \author{ Edgar Acuna}
 \seealso{\code{\link{crossval}}, \code{\link{cv10log}} }
 \examples{
-#-----cross validation using the MLP classifier---
+\dontrun{#-----cross validation using the MLP classifier---
 data(heartc)
+heartc=ce.impute(heartc,"mean",1:13)
 cv10mlp(heartc,25,decay=0.1,maxwts=1000,maxit=100,repet=2)
 }
-\keyword{classif}
+}
+\keyword{classification}

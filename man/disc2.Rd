@@ -6,14 +6,16 @@
 This function is called by the disc.ef function in the dprep library. 
 }
 \usage{
-disc2(x, k)
+disc2(x, k, out=c("symb","num"))
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{x}{ A numerical vector}
   \item{k}{ The number of intervals}
+  \item{out}{To get the discretized data in numerical fromat enter "num". To get
+the discretized data in interval format enter "symb".}
 }
 \author{ Edgar Acuna}
 \seealso{\code{\link{disc.ef}}}
-\keyword{manip}
+\keyword{Discretization}
 

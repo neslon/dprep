@@ -3,12 +3,13 @@
 \docType{data}
 \title{ The Breast Wisconsin dataset}
 \description{
-  This is the Breast Wisconsin dataset from the UCI Machine Learning Repository. 
-Sixteen instances with missing values have been deleted from the original dataset.
+This is the Breast Wisconsin dataset from the UCI Machine Learning Repository. 
+This dataset has 699 instances, sixteen of them  with missing values, 9 predictor attributes 
+and one class attribute assuming values 1(benign tumor) and 2(malign tumor).
 }
 \usage{data(breastw)}
 \format{
-  A data frame with 683 observations on the following 10 variables.
+  A data frame with 699 observations on the following 10 variables.
   \describe{
     \item{V1}{Clump Thickness }
     \item{V2}{Uniformity of Cell Size}
@@ -23,9 +24,9 @@ Sixteen instances with missing values have been deleted from the original datase
   }
 }
 \details{
-All the features assume values in the range 1-10. The original dataset
-contains 699 observations but 16 of them have been delate because contain
-missing values
+All the features assume values in the range 1-10. The dataset
+contains 699 observations with 16 of them having missing values.
+It is recommended to impute these values  been before further analysis.
 }
 \source{The UCI Machine Learning Database Repository at:
 \itemize{
@@ -36,6 +37,6 @@ missing values
 \examples{
 #Detecting outliers in class-1 using the LOF algorithms---
 data(breastw)
-maxlof(breastw[breastw[,10]==1,],name="",30,40)
+ce.impute(breastw,"mean",1:9)
 }
 \keyword{datasets}

@@ -1,0 +1,23 @@
+exportPattern("^[[:alpha:]]+")
+useDynLib(dprep)
+importFrom(class,knn)
+importFrom(rpart,rpart)
+importFrom(StatMatch,gower.dist)
+importFrom(nnet,multinom)
+importFrom(nnet,nnet)
+importFrom(nnet,class.ind)
+importFrom(e1071,naiveBayes)
+importFrom(MASS,lda)
+importFrom(MASS,cov.rob)
+importFrom(FNN,knnx.dist)
+importFrom("grDevices", "gray", "nclass.scott", "palette",
+             "topo.colors")
+importFrom("graphics", "arrows", "axis", "boxplot", "identify",
+             "image", "legend", "lines", "matlines", "matplot", "par",
+             "plot", "plot.new", "plot.window", "points", "polygon",
+             "segments", "text", "title")
+importFrom("methods", "is")
+importFrom("stats", "as.formula", "cov", "kruskal.test", "mahalanobis",
+             "median", "pchisq", "pnorm", "predict", "qchisq", "rbinom",
+             "runif")
+import(rgl)

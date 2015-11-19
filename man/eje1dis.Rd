@@ -11,14 +11,14 @@ the classes: P=Pass, and F=Fail
 \format{
   A data frame with 32 observations on the following 3 variables.
   \describe{
-    \item{V1}{Grade on the first exam}
-    \item{V2}{Grade on the second exam}
-    \item{class}{The class vector:P=Pass, F=Fail}
+    \item{E1}{Grade on the first exam}
+    \item{E2}{Grade on the second exam}
+    \item{Class}{The class vector:P=Pass, F=Fail}
   }
 }
 \source{ Data obtained from Edgar Acuna:
 \itemize{
-      \item \url{http://math.uprm.edu/~edgar/datosclass.html}
+      \item \url{http://academic.uprm.edu/eacuna/datosclass.html}
     }
 }
 \examples{

@@ -17,4 +17,4 @@ top(O, neighbors, n)
 \author{Caroline Rodriguez}
 \seealso{\code{\link{baysout}}}
 
-\keyword{methods}
+\keyword{math}

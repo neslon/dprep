@@ -58,7 +58,7 @@ mirroring. Hence, it can be shown that the total number of different projections
 is factorial(m-1)/2.
 }
 \examples{
-data(my.iris)
-radviz2d(my.iris,"Iris")
+data(iris)
+radviz2d(iris,"Iris")
 }
-\keyword{ hplot}
+\keyword{Visualization}

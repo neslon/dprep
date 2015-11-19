@@ -19,4 +19,4 @@ sfs1(data, indic, correcto, kvec, method = c("lda", "knn",
 }
 \author{Edgar Acuna}
 \seealso{\code{\link{sffs}}}
-\keyword{methods}
+\keyword{Feature Selection}

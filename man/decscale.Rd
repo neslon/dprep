@@ -28,4 +28,4 @@ dssonar=decscale(sonar)
 plot(dssonar[,2])
 par(def)
 }
-\keyword{manip}
+\keyword{Normalization}

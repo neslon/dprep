@@ -1,6 +1,6 @@
 \name{clean}
 \alias{clean}
-\title{Dataset Cleaning}
+\title{Dataset's cleaning}
 \description{
 A function to eliminate rows and columns that have 
 a percentage of missing values greater than the allowed 
@@ -42,4 +42,4 @@ Classification, Clustering and Data Mining Applications. Springer-Verlag Berlin-
 data(hepatitis)
 hepa.cl=clean(hepatitis,0.5,0.3,name="hepatitis-clean")
 }
-\keyword{manip}
+\keyword{Imputation}

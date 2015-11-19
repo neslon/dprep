@@ -29,6 +29,6 @@
 \examples{
 #---Feature selection using SFS with the LDA classifier--
 data(diabetes)
-sfs(diabetes,"lda",repet=4)
+sfs(diabetes,"lda",repet=1)
 }
 \keyword{datasets}

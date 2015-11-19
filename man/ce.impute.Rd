@@ -4,7 +4,7 @@
 \title{ Imputation in supervised classification}
 \description{
   This function performs data imputation in datasets for supervised classification by using
-mean, median or knn imputation methods.
+mean, median or knn imputation methods. The mode is used when the attribute is nominal
 }
 \usage{
 ce.impute(data, method = c("mean", "median", "knn"), atr,
@@ -39,4 +39,4 @@ data(hepatitis)
 hepa.imputed=ce.impute(hepatitis,"knn",k1=10)
 }
 
-\keyword{ manip }% 
+\keyword{ Imputation }% 

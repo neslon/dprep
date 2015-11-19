@@ -32,10 +32,10 @@ Communication and Control technologies, CCCT03. VolI. p. 468-472. Orlando, Flori
 \seealso{\code{\link{inconsist}},\code{\link{lvf}}}
 \examples{
 #---- Feature Selection with FINCO
-data(my.iris)
-iris.discew=disc.ew(my.iris,1:6)
+data(iris)
+iris.discew=disc.ew(iris,1:6,out="num")
 inconsist(iris.discew)
 finco(iris.discew,0.05)
 }
 
-\keyword{methods}
+\keyword{Feature Selection}

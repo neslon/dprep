@@ -1,16 +1,10 @@
 distancia <-
-function(x, y)
-{
-#****************************************************
-# Finds the euclidean distance between
-# two vector x and y or the matrix y and the vector x
-# ***************************************************
- if(class(y)=="matrix") 
-    {
-        distancia = drop(sqrt(colSums((x-t(y))^2)))
-        distancia= t(distancia)
+function (x, y) 
+{#Find out the row in y that is closer to x using eucldean distance 
+    if (class(y) == "matrix") {
+        distancia = drop(sqrt(colSums((x - t(y))^2)))
+        distancia = t(distancia)
     }
-  else distancia = sqrt(sum((x-y)^2))
- distancia
+    else distancia = sqrt(sum((x - y)^2))
+    distancia
 }
-

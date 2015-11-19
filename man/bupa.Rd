@@ -25,8 +25,8 @@
     }
 }
 \examples{
-#---Sequential forward feature selection using the lda classifier---
+\dontrun{#---Sequential forward feature selection using the lda classifier---
 data(bupa)
 sfs(bupa,"lda",repet=10)
-}
+}}
 \keyword{datasets}

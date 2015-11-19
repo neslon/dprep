@@ -28,8 +28,8 @@ Classification, Clustering and Data Mining Applications. Springer-Verlag Berlin-
 
 \examples{
 #---- Plotting datasets with missing values
-data(censusn)
-imagmiss(censusn, "censusn")
+data(hepatitis)
+imagmiss(hepatitis, "hepatitis")
 }
-\keyword{hplot}
+\keyword{Visualization}
 

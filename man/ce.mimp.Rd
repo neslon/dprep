@@ -32,4 +32,4 @@ data(hepatitis)
 #--------Mean Imputation---------- 
 hepa.mean.imp=ce.impute(hepatitis,"mean",1:19)
 }
-\keyword{ manip }
+\keyword{ Imputation}

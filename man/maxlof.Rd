@@ -32,11 +32,12 @@ ACM SIGMOD International Conference on Management of Data.
 }
 \author{Caroline Rodriguez}
 \examples{
-#Detecting top 10 outliers in class number 1 of Breastw using the LOF algorithm
+\dontrun{#Detecting top 10 outliers in class number 1 of Breastw using the LOF algorithm
 data(breastw)
+breastw=ce.impute(breastw,"median",1:9)
 breastw1.lof=maxlof(breastw[breastw[,10]==1,],name="Breast-Wisconsin",30,40)
 breastw1.lof[order(breastw1.lof,decreasing=TRUE)][1:10]
-}
+}}
 
-\keyword{methods}
+\keyword{Outlier Detection}
 

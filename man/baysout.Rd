@@ -10,13 +10,14 @@ observation and returns the indexes of those observations having the largest mea
 The number of outliers to be returned is specified by the user.
 }
 \usage{
-baysout(D, blocks = 5, k = 3, num.out = 10)
+baysout(D, blocks = 10, nclass=0, k = 3, num.out = 10)
 }
 \arguments{
   \item{D}{ the dataset under study}
   \item{blocks}{ the number of sections in which to divide the entire dataset. It  must be 
-          at least as large as the number of outliers requested.
-}
+          at least as large as the number of outliers requested.}
+\item{nclass}{To find the outliers without taking in cnsideration the feature class enter 0.
+To find the outliers for a given class enter the class number.}
   \item{k}{ the number of neighbors to find for each observation}
   \item{num.out}{ the number of outliers to return}
 }
@@ -30,10 +31,10 @@ and their measures is also displayed.
 Bay, S.D., and Schwabacher (2003). Mining distance-based 
 outliers in near linear time with randomization and a simple pruning rule.
 }
-\author{ Caroline Rodriguez(2004). Modified by Elio Lozano (2005)}
+\author{ Caroline Rodriguez(2004). Modified by Elio Lozano (2005) and Edgar Acuna (2015)}
 \examples{
 #---- Outliers detection using the Bay's algorithm----
 data(bupa)
 bupa.out=baysout(bupa[bupa[,7]==1,1:6],blocks=10,num.out=10)
 }
-\keyword{methods}
+\keyword{Outlier Detection}

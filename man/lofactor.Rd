@@ -27,8 +27,8 @@ International Conference on Management of Data.}
 \author{Caroline Rodriguez}
 \examples{
 #---- Detecting the top 10 outliers using the LOF algorithm----
-data(my.iris)
-iris.lof=lofactor(my.iris,10)
+data(bupa)
+bupa.lof=lofactor(bupa,10)
 }
 
-\keyword{methods}
+\keyword{Outlier Detection}

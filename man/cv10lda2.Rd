@@ -16,5 +16,5 @@ cv10lda2(data)
 }
 \author{Edgar Acuna}
 \seealso{\code{\link{crossval}}}
-\keyword{classif}
+\keyword{classification}
 

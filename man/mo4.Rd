@@ -12,14 +12,14 @@ mo4(data)
 
 \arguments{
   \item{data}{ The dataset containing the features of the multivariate vector for which the 
-fourth moment will be computed}
+fourth moment will be computed. Do not include the class attribute for supervised datasets }
 }
 \value{
 Returns the fourth moment.}
 \author{ Edgar Acuna }
 \seealso{ \code{\link{mo3}}, \code{\link{mardia}} }
 \examples{
-data(my.iris)
-mo4(my.iris)
+data(iris)
+mo4(iris[,-5])
 }
 \keyword{ multivariate }

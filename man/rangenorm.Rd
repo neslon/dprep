@@ -6,7 +6,8 @@
  Performs several methods of range normalization. 
 }
 \usage{
-rangenorm(data, method = c("znorm", "mmnorm", "decscale","signorm", "softmaxnorm"),superv=TRUE)
+rangenorm(data, method = c("znorm", "mmnorm", "dscale","signorm", "softnorm"),
+superv=TRUE)
 }
 \arguments{
   \item{data}{The name of the dataset to be normalized}
@@ -58,11 +59,11 @@ Hann, J., Kamber, M. (2000). Data Mining: Concepts and Techniques.
 \examples{
 #----Several methods of range normalization ----
 data(bupa)
-bupa.znorm=rangenorm(bupa,method="znorm")
-bupa.mmnorm=rangenorm(bupa,method="mmnorm")
-bupa.decs=rangenorm(bupa,method="decscale")
-bupa.signorm=rangenorm(bupa,method="signorm")
-bupa.soft=rangenorm(bupa,method="softmaxnorm")
+bupa.znorm=rangenorm(bupa,method="znorm",superv=TRUE)
+bupa.mmnorm=rangenorm(bupa,method="mmnorm",superv=TRUE)
+bupa.decs=rangenorm(bupa,method="dscale",superv=TRUE)
+bupa.signorm=rangenorm(bupa,method="signorm",superv=TRUE)
+bupa.soft=rangenorm(bupa,method="softnorm",superv=TRUE)
 #----Plotting to see the effect of the normalization----
 op=par(mfrow=c(2,3))
 plot(bupa[,1])
@@ -73,4 +74,4 @@ plot(bupa.signorm[,1])
 plot(bupa.soft[,1])
 par(op)
 }
-\keyword{manip}
+\keyword{Normalization}

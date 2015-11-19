@@ -38,4 +38,4 @@ plot(ionosphere[,1])
 plot(ionos.minmax[,1])
 par(op)
 }
-\keyword{manip}
+\keyword{Normalization}

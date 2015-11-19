@@ -35,4 +35,4 @@ plot(vehicle[,1])
 plot(vehicle.signorm[,1])
 par(op)
 }
-\keyword{manip}
+\keyword{Normalization}

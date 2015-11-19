@@ -4,7 +4,7 @@
 \title{ Auxiliary function for the reliefcont function}
 \description{
 This function finds the instance in the data matrix 
-that is closest to a given instance x. It is assumed that all the
+that is closest to a given instance x using Euclidean distance. It is assumed that all the
 attributes are continuous.
 }
 \usage{
@@ -15,6 +15,6 @@ near1(x, data)
   \item{data}{The name of the dataset}
 }
 \author{Edgar Acuna}
-\seealso{\code{\link{near2}},\code{\link{relief}}}
+\seealso{\code{\link{near3}},\code{\link{distancia}}}
 
 \keyword{math}

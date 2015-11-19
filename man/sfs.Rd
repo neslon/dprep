@@ -35,7 +35,7 @@ Proceedings of  the Interface 2003 Computing Science and Statistics. Vol 34.
 }
 \examples{
 #---- Sequential forward selection using the knn classifier----
-data(my.iris)
-sfs(my.iris,method="knn",kvec=3,repet=10)
+data(iris)
+sfs(iris,method="lda",repet=3)
 }
-\keyword{methods}
+\keyword{Feature Selection}
