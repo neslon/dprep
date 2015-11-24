@@ -1,4 +1,4 @@
-641a4a2c615d6bcf7b8dba8225fdbab2 *DESCRIPTION
+f4f376ab6135544e84265aa54902549c *DESCRIPTION
 349c0a77680f74dad6925b3c91f0ac42 *NAMESPACE
 297285d9da5557cc0441a64cb992628c *R/acugow.R
 14cfb28ac05caea9188f4598b36359c5 *R/baysout.R
@@ -21,7 +21,7 @@ a6c227c90b5b385099650e07d6c15181 *R/cv10rpart2.R
 8be76300782b7983f4699e4d22bf6035 *R/disc.ew.R
 b5da82920b4f6926e623e31a6ab426fe *R/disc.mentr.R
 4c5e600770e19e39fd46dd2ce8e81f10 *R/disc2.R
-86dd405a77183f8128bd1c0eb759982f *R/discretevar.R
+f52ea9b5f9b97f0fc465fc92bc2d126d *R/discretevar.R
 52467cb00f2944d31f208549ddf7d4a7 *R/dist.to.knn.R
 a104b326517edf28eb3cc40efe77f9da *R/distancia.R
 9f2861fba25e5fb013cc901d9a8477b3 *R/distancia1.R
@@ -36,7 +36,7 @@ d5d409dceff8195b24d43bab1184a370 *R/knneigh.vect.R
 55291508293cb4c61eaf71f10a461481 *R/mahaout.R
 341338e2fa490cf1bac50381dd1e896f *R/mardia.R
 468518f996004299a29ba67e9e2375bb *R/maxlof.R
-0f7b8e2536a7f4fa2653bfb45da7a5f7 *R/midpoints1.R
+93e89888cb30fb1b83ced27b26f89740 *R/midpoints1.R
 2d84438a83d25811b4c846e73d972aa4 *R/mmnorm.R
 6deddec64f50ee8592aa081752dfb0a2 *R/mo3.R
 992ee792b31d63629815e475110e9ffa *R/mo4.R
@@ -71,7 +71,6 @@ aa1ed7e90abdcbb1ee3f875879497d76 *R/star3d.R
 57d27b1b3cfc1a7eb655a5f584d687df *R/vvalen.R
 b0b0ab62cfd6df5d3f85ba9a9fce9317 *R/vvalen1.R
 93eb1d99ae444b90c501052d233efae5 *R/znorm.R
-11e6abee8601c3e1238b09bda280900b *build/partial.rdb
 64ee38e6d68b60943b5cd2e29bae544d *data/Shuttle.rda
 2572662dc6774bed3b668951ded9bf0e *data/arboleje.rda
 cb9fbb90ccc7c9fd298c5ada46d9203c *data/arboleje1.rda
@@ -94,7 +93,7 @@ f35528760d582e278670825508552851 *data/srbct.rda
 1e24354ba83234067f6f18ae568d132e *man/Shuttle.Rd
 2685879892e0deb27fd88810f88cf36c *man/acugow.Rd
 c33de90cc125a2258e80bb85ec081a27 *man/arboleje.Rd
-9a67f2ef4bdf5fbf3bab0135f27122a5 *man/arboleje1.Rd
+095fc9c7408ce03ad3c6d6d2cdb382c0 *man/arboleje1.Rd
 c1402d6ceb3ef2abfdeefd73c27c6e24 *man/autompg.Rd
 0f63ac8ba59ff70f7e5537f2b380b416 *man/baysout.Rd
 3d2ef13820daffa500f3291724a008dc *man/breastw.Rd
@@ -114,19 +113,19 @@ b5631564f5535f1ac364aa0ab78cf425 *man/cv10lda2.Rd
 e87964ade2233e45f6f4ca7fde9eeab7 *man/cv10log.Rd
 e6d28df2e42a33ff429a365d7ab38636 *man/cv10mlp.Rd
 ab6e8e12f6f84b91602d9b1eec208976 *man/cv10rpart2.Rd
-8ea3ed928f416356931d696e17d81808 *man/cvnaiveBayesd.Rd
+fc24033aa1aae97dd574b0fc235778cb *man/cvnaiveBayesd.Rd
 0ea3fd916f64cd82dfb3fb16bb54ba26 *man/decscale.Rd
 9685d88d16177cfe3e9ae420d7cf455d *man/diabetes.Rd
 eb81229770a6eeff037e37dfbe7678aa *man/disc.1r.Rd
 eca94568e76e3bb532c9f7e4079ec7b7 *man/disc.ef.Rd
 07cf2aaa3dca03fd1c43dd961ccfee23 *man/disc.ew.Rd
-55b42da60f5f32aeca80cbe45d8ba85e *man/disc.mentr.Rd
+7d9e8dccac4dda80f52da5bba132f102 *man/disc.mentr.Rd
 c2a218b03f7217a13435a1aa5ab719d3 *man/disc2.Rd
 51655ac6a1cb18eb5b0c3b1a574925d6 *man/discretevar.Rd
 8c10c4072e005776e3d4e6214b527da8 *man/dist.to.knn.Rd
 806929a8dde01fedcf161b4feef86083 *man/distancia.Rd
 9d199cd9cb7b8f4fae97f66985e57bda *man/distancia1.Rd
-5352a03c4bea87d390e27b8b796a1185 *man/dprep-package.Rd
+f0160462946f4ccb7b5ac9687934a6af *man/dprep-package.Rd
 8506f228710975c5a700b203d7223cf2 *man/ec.knnimp.Rd
 f1ea33e752dc8c7caad4e7b48f3e5156 *man/eje1dis.Rd
 9276309d4415c08fa4109a2f6b7c7607 *man/finco.Rd
@@ -145,7 +144,7 @@ a8584fa16e341ff30ba6cdb42db2a759 *man/mahaout.Rd
 9a811ade290883485fff4d6004cd36ed *man/maxlof.Rd
 16146018ee5179fae51f9430033e07ab *man/midpoints1.Rd
 c52024c529f8494c9b89897a34d09020 *man/mmnorm.Rd
-019391b6154a376ff95af8daa8905cbd *man/mo3.Rd
+7c2b98854ab09ffe72baeef9ec96710f *man/mo3.Rd
 bfc5bef804bb4caf7fcb8c56bee44509 *man/mo4.Rd
 dec87002ba245c684a8c3a4b74d26fe3 *man/moda.Rd
 5147bfe565aeb63ce04281ee4ef7b2b9 *man/near1.Rd
@@ -181,4 +180,4 @@ a198ce8c9cefb9a9c62d0d0f6c919182 *man/surveyplot.Rd
 fb09fa6b2177332674e1f83f1da39484 *man/vvalen.Rd
 71dd1de1317a9fdde70bc5c06b8f204c *man/vvalen1.Rd
 23e11d9bd57f0863f0847fefc272ef87 *man/znorm.Rd
-d9da7944ed2c79303fbea21c1608a1f3 *src/Discrete.cpp
+4f5b41fb1c33b5f9710e793a5753f3ef *src/Discrete.cpp

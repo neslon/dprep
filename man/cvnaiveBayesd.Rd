@@ -36,9 +36,9 @@ Edgar Acuna
 \seealso{\code{\link{crossval}}
 }
 \examples{
-data(vehicle)
+data(diabetes)
 library(e1071)
-cvnaiveBayesd(vehicle,3,method="ew")
+cvnaiveBayesd(diabetes,3,method="ew")
 }
 \keyword{classification }
 

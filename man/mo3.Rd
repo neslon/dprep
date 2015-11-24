@@ -18,7 +18,8 @@ which the third moment will be computed. Do not include the class attribute for 
 \author{ Edgar Acuna}
 \seealso{ \code{\link{mo4}}, \code{\link{mardia}} }
 \examples{
-data(iris)
+\dontrun{data(iris)
 mo3(iris[,-5])
+}
 }
 \keyword{multivariate}

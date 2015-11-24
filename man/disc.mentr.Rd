@@ -24,11 +24,13 @@ Returns a matrix containing only discretized features.}
 Dougherty, J., Kohavi, R., and Sahami, M. (1995). Supervised and unsupervised discretization 
 of continuous features. ML-95.
 }
-\author{Luis Daza}
+\author{Luis Daza(2006) and Edgar Acuna(2015)}
 \seealso{ \link{disc.1r}, \link{disc.ew},\link{disc.ef},\link{chiMerge} }
 \examples{
+\dontrun{
 #----Discretization using the entropy with Minimum Description Length.
 data(bupa)
 bupa.disc=disc.mentr(bupa,1:6,out="num")
+}
 }
 \keyword{Discretization}

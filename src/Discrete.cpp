@@ -1,6 +1,6 @@
 #include <R.h>
 #include <Rmath.h>
-#define  MAX 1000
+#define  MAX 10000
 using namespace std;
 
 double mid_point(double n1, double n2);
@@ -270,6 +270,7 @@ void do_the_rest(double input[],int cInput[],double t[],double t_sel[],int nrows
    {
        return;
    }
+delete [] entropy;
 }
 
 int min(double num[],int start, int limit)

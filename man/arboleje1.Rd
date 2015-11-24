@@ -5,7 +5,7 @@
 }
 \description{
 Simulated example about predicting a  bank's decision to give a loan to
-customer for buying a car. The feature Marital Status is codified using
+customer for buying a car. The feature "Marital Status" has been codified using
 three dummy variables.} 
 \usage{data("arboleje1")}
 \format{

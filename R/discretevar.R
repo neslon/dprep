@@ -5,8 +5,9 @@ function (data, var, n, p)
     x <- idx$x
     cx <- data[idx$ix, p]
     midpoint <- midpoints1(x)
+    pts=rep(0,n)
     disc <- .C("discrete", as.double(x), as.integer(cx), as.double(midpoint), 
-        as.integer(n), puntos = double(n), npart = integer(1),PACKAGE="dprep")
+        as.integer(n), puntos = as.double(pts), npart = integer(1),PACKAGE="dprep")
     np <- disc$npart
     cat("The number of partitions for var", var, "  is :", np, 
         "\n")
