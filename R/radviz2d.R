@@ -53,4 +53,5 @@ function (dataset, name = "")
     title(main = maintitle)
     par(xpd = FALSE)
     par(def.par)
+    return(proj)
 }
