@@ -53,5 +53,6 @@ function (dataset, name = "")
     title(main = maintitle)
     par(xpd = FALSE)
     par(def.par)
-    return(proj.x)
+    output = list(proj.x,proj.y)
+    return(output)
 }
