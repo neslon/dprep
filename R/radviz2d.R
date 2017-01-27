@@ -52,6 +52,5 @@ function (dataset, name = "")
         1), bty = "n", xjust = 0, yjust = 0, horiz = TRUE)
     title(main = maintitle)
     par(xpd = FALSE)
-    identify(proj.x,proj.y,labels=1:n)
     par(def.par)
 }
